@@ -8,184 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    --bg:#ffffff;
-    --bg-alt:#f7f7fb;
-    --ink:#0d1020;
-    --muted:#5b6178;
-    --line:#e7e8f0;
-    --card:#ffffff;
-    --accent:#6d28d9;
-    --accent-2:#ec4899;
-    --accent-3:#06b6d4;
-    --grad:linear-gradient(100deg,#6d28d9 0%,#9333ea 40%,#ec4899 100%);
-    --grad-soft:linear-gradient(135deg,rgba(109,40,217,.12),rgba(236,72,153,.10));
-    --shadow:0 1px 2px rgba(13,16,32,.04),0 12px 32px -12px rgba(13,16,32,.18);
-    --radius:18px;
-    --maxw:1120px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-padding-top:80px}
-  body{
-    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    color:var(--ink);background:var(--bg);line-height:1.6;
-    -webkit-font-smoothing:antialiased;overflow-x:hidden;
-  }
-  h1,h2,h3,.display{font-family:'Sora','Inter',system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-
-  /* NAV */
-  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(12px);
-    background:rgba(255,255,255,.78);border-bottom:1px solid var(--line)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
-  .logo{font-family:'Sora';font-weight:800;font-size:20px;letter-spacing:-.03em;display:flex;align-items:center;gap:9px}
-  .logo .dot{width:11px;height:11px;border-radius:50%;background:var(--grad)}
-  .nav-links{display:flex;align-items:center;gap:30px}
-  .nav-links a{color:var(--muted);font-weight:500;font-size:15px;transition:color .15s}
-  .nav-links a:hover{color:var(--ink)}
-  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;
-    padding:11px 20px;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s;cursor:pointer;border:0}
-  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 20px -8px rgba(147,51,234,.7)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 26px -10px rgba(147,51,234,.8)}
-  .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
-  .btn-ghost:hover{border-color:#c9cbd8;transform:translateY(-2px)}
-  .nav-toggle{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
-  .nav-toggle span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
-
-  /* HERO */
-  .hero{position:relative;padding:84px 0 64px;overflow:hidden}
-  .hero::before{content:"";position:absolute;top:-260px;right:-180px;width:620px;height:620px;border-radius:50%;
-    background:radial-gradient(closest-side,rgba(147,51,234,.18),transparent 70%);z-index:0}
-  .hero::after{content:"";position:absolute;bottom:-280px;left:-160px;width:560px;height:560px;border-radius:50%;
-    background:radial-gradient(closest-side,rgba(6,182,212,.16),transparent 70%);z-index:0}
-  .hero .wrap{position:relative;z-index:1}
-  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;letter-spacing:.04em;
-    text-transform:uppercase;color:var(--accent);background:var(--grad-soft);
-    border:1px solid rgba(147,51,234,.18);padding:7px 14px;border-radius:999px;margin-bottom:24px}
-  .eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent-2)}
-  h1.hero-title{font-size:clamp(38px,6vw,68px);font-weight:800;max-width:14ch}
-  .hero-sub{margin-top:22px;font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch}
-  .hero-cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
-  .chips{margin-top:42px;display:flex;gap:12px;flex-wrap:wrap}
-  .chip{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--line);
-    border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);min-width:150px}
-  .chip b{font-family:'Sora';font-size:24px;font-weight:800;line-height:1}
-  .chip span{font-size:13px;color:var(--muted)}
-
-  /* LOGO STRIP */
-  .logos{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-alt);padding:26px 0}
-  .logos p{text-align:center;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;font-weight:600}
-  .logo-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 34px;align-items:center}
-  .logo-row span{font-family:'Sora';font-weight:700;font-size:19px;color:#9aa0b4;letter-spacing:-.02em;transition:color .2s}
-  .logo-row span:hover{color:var(--ink)}
-
-  /* SECTIONS */
-  section.block{padding:84px 0}
-  .sec-head{max-width:640px;margin-bottom:46px}
-  .kicker{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-  .sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin-top:12px}
-  .sec-head p{margin-top:14px;color:var(--muted);font-size:17px}
-  .alt{background:var(--bg-alt)}
-
-  /* RESULTS GRID */
-  .grid{display:grid;gap:18px}
-  .results{grid-template-columns:repeat(4,1fr)}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
-  .stat::after{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--grad)}
-  .stat .num{font-family:'Sora';font-size:38px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .stat .lbl{margin-top:10px;font-weight:600;font-size:15px}
-  .stat .ctx{margin-top:4px;font-size:13.5px;color:var(--muted)}
-
-  /* SERVICES */
-  .services{grid-template-columns:repeat(3,1fr)}
-  .svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s,box-shadow .18s,border-color .18s}
-  .svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d9d2f3}
-  .svc .ic{width:46px;height:46px;border-radius:12px;background:var(--grad-soft);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
-  .svc h3{font-size:18px;font-weight:700}
-  .svc p{margin-top:8px;color:var(--muted);font-size:14.5px}
-
-  /* TOOLS */
-  .tools{grid-template-columns:repeat(3,1fr)}
-  .tool{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
-  .tool .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:var(--grad-soft);padding:5px 11px;border-radius:999px}
-  .tool h3{font-size:21px;font-weight:800;margin-top:16px}
-  .tool .quote{margin-top:6px;font-style:italic;color:var(--accent-2);font-size:14.5px}
-  .tool p{margin-top:12px;color:var(--muted);font-size:14.5px;flex:1}
-  .tool .stack{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
-  .tool .stack b{font-size:12px;font-weight:600;color:var(--muted);background:var(--bg-alt);border:1px solid var(--line);padding:4px 9px;border-radius:7px}
-  .tool .link{margin-top:18px;font-weight:600;font-size:14.5px;color:var(--accent);display:inline-flex;align-items:center;gap:6px;transition:gap .15s}
-  .tool .link:hover{gap:10px}
-
-  /* EXPERIENCE */
-  .timeline{position:relative;padding-left:30px}
-  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--accent-2))}
-  .job{position:relative;padding-bottom:38px}
-  .job:last-child{padding-bottom:0}
-  .job::before{content:"";position:absolute;left:-30px;top:5px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--accent)}
-  .job .when{font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.03em}
-  .job h3{font-size:20px;font-weight:700;margin-top:4px}
-  .job .org{color:var(--muted);font-weight:600;font-size:15px}
-  .job ul{margin-top:12px;padding-left:18px;color:var(--muted);font-size:15px}
-  .job ul li{margin-bottom:7px}
-  .job ul li b{color:var(--ink)}
-
-  /* ABOUT */
-  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start}
-  .about-grid p.bio{font-size:18px;color:var(--muted)}
-  .about-grid p.bio strong{color:var(--ink)}
-  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
-  .panel + .panel{margin-top:16px}
-  .panel h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-  .panel .row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px}
-  .panel .row:last-child{border-bottom:0}
-  .panel .row span{color:var(--muted);text-align:right}
-  .pills{display:flex;flex-wrap:wrap;gap:8px}
-  .pills b{font-size:13px;font-weight:600;background:var(--bg-alt);border:1px solid var(--line);padding:6px 11px;border-radius:999px;color:var(--ink)}
-
-  /* CONTACT */
-  .cta-band{background:var(--ink);color:#fff;border-radius:26px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}
-  .cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 30% -20%,rgba(147,51,234,.5),transparent),radial-gradient(500px 280px at 90% 120%,rgba(236,72,153,.45),transparent);opacity:.85}
-  .cta-band > *{position:relative;z-index:1}
-  .cta-band h2{font-size:clamp(28px,4vw,40px);font-weight:800}
-  .cta-band p{margin-top:14px;color:#c7c9da;font-size:17px;max-width:48ch;margin-left:auto;margin-right:auto}
-  .cta-actions{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-  .btn-light{background:#fff;color:var(--ink)}
-  .btn-light:hover{transform:translateY(-2px)}
-  .btn-outline-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
-  .btn-outline-light:hover{border-color:#fff;transform:translateY(-2px)}
-
-  footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}
-  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}
-  .foot a{color:var(--muted)}
-  .foot a:hover{color:var(--ink)}
-
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.in{opacity:1;transform:none}
-
-  /* RESPONSIVE */
-  @media(max-width:960px){
-    .results{grid-template-columns:repeat(2,1fr)}
-    .services,.tools{grid-template-columns:repeat(2,1fr)}
-    .about-grid{grid-template-columns:1fr}
-  }
-  @media(max-width:680px){
-    .nav-links{position:fixed;inset:68px 0 auto 0;background:#fff;flex-direction:column;gap:0;
-      border-bottom:1px solid var(--line);padding:8px 0;transform:translateY(-130%);transition:transform .25s;box-shadow:var(--shadow)}
-    .nav-links.open{transform:none}
-    .nav-links a{padding:14px 24px;width:100%}
-    .nav-links .btn{margin:10px 24px}
-    .nav-toggle{display:flex}
-    .results,.services,.tools{grid-template-columns:1fr}
-    .hero{padding:54px 0 44px}
-    section.block{padding:60px 0}
-    .cta-band{padding:44px 22px}
-  }
-  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-</style>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -197,7 +20,7 @@
       <a href="#results">Results</a>
       <a href="#services">What I do</a>
       <a href="#tools">Tools I built</a>
-      <a href="#experience">Experience</a>
+      <a href="work.html">Writing</a>
       <a href="#about">About</a>
       <a class="btn btn-primary" href="mailto:navyadonkena02@gmail.com">Hire me</a>
     </nav>
@@ -213,7 +36,7 @@
     <p class="hero-sub">7+ years helping B2B SaaS brands win search and AI visibility. SEO content, AI Overviews, and LLM citations engineered to turn into qualified pipeline — not just traffic.</p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="mailto:navyadonkena02@gmail.com">Let's work together →</a>
-      <a class="btn btn-ghost" href="#results">See the results</a>
+      <a class="btn btn-ghost" href="work.html">Read my writing</a>
     </div>
     <div class="chips">
       <div class="chip"><b>20+</b><span>#1 page Google rankings</span></div>
@@ -228,9 +51,24 @@
 <div class="logos">
   <div class="wrap">
     <p>Brands I've created content for</p>
-    <div class="logo-row">
-      <span>Everstage</span><span>Skuad</span><span>Asymbl</span><span>Payoneer</span><span>MailReach</span>
-      <span>Cisco</span><span>TCS</span><span>Atlan</span><span>MassMailer</span><span>CloudFiles</span><span>PowerRouter</span>
+    <div class="logo-grid">
+      <div class="logo-cell"><img src="Logos/Cisco.png" alt="Cisco" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/TCS.png" alt="TCS" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/payoneer-logo-payoneer-icon-transparent-free-png.webp" alt="Payoneer" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/skuad.jpeg" alt="Skuad" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Everstage.png" alt="Everstage" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Asymbl.png" alt="Asymbl" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Mailreach.jpg" alt="MailReach" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Cloudfiles.png" alt="CloudFiles" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/PowerRouter.png" alt="PowerRouter" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/MassMailer.png" alt="MassMailer" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Mailora.png" alt="Mailora" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/HighRev.png" alt="HighRev" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Locus.png" alt="Locus" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Ovaledge.png" alt="OvalEdge" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Onenought.one.png" alt="Onenought.one" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Workfall.png" alt="Workfall" loading="lazy" /></div>
+      <div class="logo-cell"><img src="Logos/Sesat.jpg" alt="Sesat Solutions" loading="lazy" /></div>
     </div>
   </div>
 </div>
@@ -312,8 +150,20 @@
   </div>
 </section>
 
+<!-- WRITING TEASER -->
+<section class="block alt" id="writing">
+  <div class="wrap">
+    <div class="sec-head reveal" style="max-width:760px">
+      <div class="kicker">Proof of work</div>
+      <h2>Long-form that's actually worth reading</h2>
+      <p>Product comparisons, technical deep dives, thought leadership, and lead magnets — written for B2B SaaS brands like Asymbl, CloudFiles, and PowerRouter.</p>
+    </div>
+    <a class="btn btn-primary reveal" href="work.html">Browse my writing →</a>
+  </div>
+</section>
+
 <!-- EXPERIENCE -->
-<section class="block alt" id="experience">
+<section class="block" id="experience">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="kicker">Experience</div>
@@ -360,7 +210,7 @@
 </section>
 
 <!-- ABOUT -->
-<section class="block" id="about">
+<section class="block alt" id="about">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="kicker">About</div>
@@ -410,23 +260,10 @@
 <footer>
   <div class="wrap foot">
     <div>© <span id="year"></span> Navya Donkena · Content Marketing Specialist</div>
-    <div><a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://github.com/Content-TeamRG/tools/tree/main/croanalyzer" target="_blank" rel="noopener">GitHub</a></div>
+    <div><a href="work.html">Writing</a> · <a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://github.com/Content-TeamRG/tools/tree/main/croanalyzer" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 
-<script>
-  // mobile nav
-  const toggle=document.getElementById('navToggle');
-  const links=document.getElementById('navLinks');
-  toggle.addEventListener('click',()=>links.classList.toggle('open'));
-  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-  // year
-  document.getElementById('year').textContent=new Date().getFullYear();
-  // reveal on scroll
-  const io=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
+<script src="main.js"></script>
 </body>
 </html>
