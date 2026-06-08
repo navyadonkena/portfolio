@@ -71,8 +71,7 @@ h1.hero-title{font-size:clamp(38px,6vw,68px);font-weight:800;max-width:14ch}
 .logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;align-items:center}
 .logo-cell{height:76px;background:#fff;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;padding:14px 18px;transition:border-color .2s,transform .2s}
 .logo-cell:hover{border-color:#d9d2f3;transform:translateY(-2px)}
-.logo-cell img{max-height:34px;max-width:100%;width:auto;object-fit:contain;filter:grayscale(1);opacity:.72;transition:filter .25s,opacity .25s}
-.logo-cell:hover img{filter:none;opacity:1}
+.logo-cell img{max-height:34px;max-width:100%;width:auto;object-fit:contain}
 
 /* SECTIONS */
 section.block{padding:84px 0}
