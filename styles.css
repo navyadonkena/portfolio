@@ -200,3 +200,50 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}
   .cta-band{padding:44px 22px}
 }
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* TESTIMONIALS */
+.testi{grid-template-columns:repeat(3,1fr)}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.tcard blockquote{color:var(--muted);font-size:14.5px;line-height:1.65;flex:1}
+.tcard blockquote::before{content:"\201C";font-family:'Sora';font-size:46px;line-height:0;color:var(--accent);opacity:.28;margin-right:3px;vertical-align:-14px}
+.tcard figcaption{display:flex;align-items:center;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.tphoto{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none;border:2px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.tphoto.tinit{display:flex;align-items:center;justify-content:center;background:var(--grad);color:#fff;font-family:'Sora';font-weight:700;font-size:15px}
+.tcard .twho{display:flex;flex-direction:column;line-height:1.3}
+.tcard .twho b{font-size:14.5px;font-weight:700;color:var(--ink)}
+.tcard .twho span{font-size:13px;color:var(--muted)}
+/* testimonials carousel */
+.carousel{position:relative}
+.testi-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:6px 2px;scrollbar-width:none}
+.testi-track::-webkit-scrollbar{display:none}
+.testi-track .tcard{min-width:340px;max-width:340px;scroll-snap-align:start}
+.car-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow);font-size:24px;line-height:1;color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:border-color .15s,color .15s,transform .15s}
+.car-arrow:hover{border-color:#d9d2f3;color:var(--accent);transform:translateY(-50%) scale(1.06)}
+#testiPrev{left:-14px}
+#testiNext{right:-14px}
+@media(max-width:680px){.testi-track .tcard{min-width:280px;max-width:280px}.car-arrow{display:none}}
+
+/* logo marquee — two rows, opposite directions */
+.logo-marquee{display:flex;flex-direction:column;gap:14px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.lm-row{overflow:hidden}
+.lm-track{display:flex;gap:14px;width:max-content}
+.lm-track .logo-cell{width:150px;flex:none}
+.lm-ltr{animation:lm-move 38s linear infinite reverse}
+.lm-rtl{animation:lm-move 38s linear infinite}
+.logo-marquee:hover .lm-track{animation-play-state:paused}
+@keyframes lm-move{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* client filter (proof of work) */
+.client-filter{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 10px}
+.client-filter button{font:inherit;font-weight:600;font-size:14px;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);cursor:pointer;transition:color .15s,border-color .15s,background .15s,box-shadow .15s}
+.client-filter button:hover{color:var(--ink);border-color:#d9d2f3}
+.client-filter button.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 20px -8px rgba(147,51,234,.6)}
+/* results snapshot — make the numbers pop */
+.results-snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:6px 0 24px}
+.rs{background:var(--rt,var(--grad-soft));border:1px solid var(--line);border-radius:14px;padding:20px 18px;text-align:center;position:relative;overflow:hidden}
+.rs::after{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:var(--rc,var(--accent))}
+.rs .rn{font-family:'Sora';font-size:36px;font-weight:800;line-height:1;color:var(--rc,var(--accent))}
+.wg-project{font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+.wg-project b{color:var(--accent)}
+.rs .rl{margin-top:9px;font-size:12.5px;color:var(--muted);font-weight:600}
+@media(max-width:680px){.results-snap{grid-template-columns:repeat(2,1fr)}}

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=2" />
+<link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
 
@@ -40,14 +40,31 @@
 
 <div class="wrap">
 
+  <div class="client-filter" id="clientFilter">
+    <button class="active" data-c="all">All clients</button>
+    <button data-c="asymbl">Asymbl</button>
+    <button data-c="cloudfiles">CloudFiles</button>
+    <button data-c="powerrouter">PowerRouter</button>
+    <button data-c="mailreach">MailReach</button>
+    <button data-c="mailora">Mailora</button>
+  </div>
+
   <!-- ASYMBL -->
-  <div class="work-group reveal">
+  <div class="work-group reveal" data-client="asymbl">
     <div class="wg-head">
       <div class="wg-logo"><img src="Logos/Asymbl.png" alt="Asymbl" /></div>
       <div class="wg-meta">
         <h3>Asymbl</h3>
-        <div class="wg-sub">Recruiting &amp; HR-tech SaaS — SEO clusters, product comparisons, and AI deep dives</div>
+        <div class="wg-sub">Recruiting &amp; HR-tech platform built on Salesforce — an ATS + CRM for staffing and talent teams.</div>
+        <div class="wg-project"><b>Project:</b> SEO-led thought-leadership long-form blogs. Within 3 months, organic traffic climbed and the program started generating MQLs.</div>
       </div>
+    </div>
+    <div class="results-snap">
+      <div class="rs" style="--rc:#0f9d58;--rt:#e6f5ec"><div class="rn">+67%</div><div class="rl">Organic traffic growth</div></div>
+      <div class="rs" style="--rc:#7c3aed;--rt:#efe9fb"><div class="rn">43%</div><div class="rl">AI Overview / LLM citations</div></div>
+      <div class="rs" style="--rc:#0d9488;--rt:#e0f2f1"><div class="rn">+24%</div><div class="rl">Leads / MQLs</div></div>
+      <div class="rs" style="--rc:#2b6cb0;--rt:#e7f0fa"><div class="rn">25</div><div class="rl">Keywords ranking</div></div>
+      <div class="rs" style="--rc:#ec4899;--rt:#fde7f1"><div class="rn">60</div><div class="rl">Blogs written</div></div>
     </div>
     <div class="work-grid">
       <a class="post" href="https://www.asymbl.com/blog/recruitment-automation" target="_blank" rel="noopener">
@@ -74,13 +91,20 @@
   </div>
 
   <!-- CLOUDFILES -->
-  <div class="work-group reveal">
+  <div class="work-group reveal" data-client="cloudfiles">
     <div class="wg-head">
       <div class="wg-logo"><img src="Logos/Cloudfiles.png" alt="CloudFiles" /></div>
       <div class="wg-meta">
         <h3>CloudFiles</h3>
-        <div class="wg-sub">Email, growth &amp; conversion — guides and listicles that grew organic traffic 40%+</div>
+        <div class="wg-sub">Document-sharing &amp; engagement platform for sales teams — content tracking, analytics, and security on top of cloud storage.</div>
+        <div class="wg-project"><b>Project:</b> SEO guides and listicles across email, growth, and conversion — TOFU/MOFU content that grew organic traffic.</div>
       </div>
+    </div>
+    <div class="results-snap">
+      <div class="rs" style="--rc:#0f9d58;--rt:#e6f5ec"><div class="rn">+40%</div><div class="rl">Organic traffic growth</div></div>
+      <div class="rs" style="--rc:#2b6cb0;--rt:#e7f0fa"><div class="rn">18</div><div class="rl">Keywords ranking</div></div>
+      <div class="rs" style="--rc:#ec4899;--rt:#fde7f1"><div class="rn">7</div><div class="rl">Blogs written</div></div>
+      <div class="rs" style="--rc:#0d9488;--rt:#e0f2f1"><div class="rn">+9%</div><div class="rl">MQL lift</div></div>
     </div>
     <div class="work-grid">
       <a class="post" href="https://www.cloudfiles.io/blog/13-common-email-marketing-mistakes-to-avoid" target="_blank" rel="noopener">
@@ -101,19 +125,90 @@
   </div>
 
   <!-- POWERROUTER -->
-  <div class="work-group reveal">
+  <div class="work-group reveal" data-client="powerrouter">
     <div class="wg-head">
       <div class="wg-logo"><img src="Logos/PowerRouter.png" alt="PowerRouter" /></div>
       <div class="wg-meta">
         <h3>PowerRouter</h3>
-        <div class="wg-sub">Lead magnets, ebooks &amp; a full blog program — built to convert</div>
+        <div class="wg-sub">Lead-routing platform built natively on Salesforce — routes and assigns inbound leads in real time.</div>
+        <div class="wg-project"><b>Project:</b> Full-cycle SEO blog program — strategy → writing → reporting → improvement — plus ebooks I wrote and designed end-to-end that generated MQLs and SQL conversions.</div>
       </div>
+    </div>
+    <div class="results-snap">
+      <div class="rs" style="--rc:#0f9d58;--rt:#e6f5ec"><div class="rn">+47%</div><div class="rl">Conversion-rate lift</div></div>
+      <div class="rs" style="--rc:#0d9488;--rt:#e0f2f1"><div class="rn">+34%</div><div class="rl">MQL lift</div></div>
+      <div class="rs" style="--rc:#c2620c;--rt:#fbeede"><div class="rn">+53%</div><div class="rl">Newsletter growth</div></div>
+      <div class="rs" style="--rc:#2b6cb0;--rt:#e7f0fa"><div class="rn">+35%</div><div class="rl">CTR improvement</div></div>
     </div>
     <div class="work-grid">
       <a class="post" href="https://powerrouter.io/resources/ebooks/" target="_blank" rel="noopener">
-        <span class="ptag">Ebooks · Lead magnets</span><h4>Ebooks &amp; Lead Magnets</h4><span class="src">View on powerrouter.io →</span></a>
+        <span class="ptag">Ebooks · written + designed</span><h4>Ebooks &amp; Lead Magnets — drove MQLs &amp; SQLs</h4><span class="src">View on powerrouter.io →</span></a>
       <a class="post" href="https://powerrouter.io/resources/blogs/" target="_blank" rel="noopener">
-        <span class="ptag">Blog program</span><h4>Blog Library</h4><span class="src">View on powerrouter.io →</span></a>
+        <span class="ptag">Full-cycle SEO</span><h4>Blog Program — strategy → writing → reporting → improvement</h4><span class="src">View on powerrouter.io →</span></a>
+    </div>
+  </div>
+
+  <!-- MAILREACH -->
+  <div class="work-group reveal" data-client="mailreach">
+    <div class="wg-head">
+      <div class="wg-logo"><img src="Logos/Mailreach.jpg" alt="MailReach" /></div>
+      <div class="wg-meta">
+        <h3>MailReach</h3>
+        <div class="wg-sub">Email deliverability &amp; inbox-warmup platform that improves sender reputation and inbox placement.</div>
+        <div class="wg-project"><b>Project:</b> SEO blogs on email deliverability and cold-email strategy.</div>
+      </div>
+    </div>
+    <div class="results-snap">
+      <div class="rs" style="--rc:#0f9d58;--rt:#e6f5ec"><div class="rn">+14%</div><div class="rl">Organic traffic growth</div></div>
+      <div class="rs" style="--rc:#2b6cb0;--rt:#e7f0fa"><div class="rn">7</div><div class="rl">Keywords ranking</div></div>
+      <div class="rs" style="--rc:#ec4899;--rt:#fde7f1"><div class="rn">2</div><div class="rl">Blogs written</div></div>
+      <div class="rs" style="--rc:#7c3aed;--rt:#efe9fb"><div class="rn">9%</div><div class="rl">AI Overview / LLM citations</div></div>
+    </div>
+    <div class="work-grid">
+      <a class="post" href="https://www.mailreach.co/blog/email-marketing-vs-cold-email" target="_blank" rel="noopener">
+        <span class="ptag">Comparison</span><h4>Email Marketing vs Cold Email</h4><span class="src">Read on mailreach.co →</span></a>
+      <a class="post" href="https://www.mailreach.co/blog/hubspot-email-deliverability" target="_blank" rel="noopener">
+        <span class="ptag">Guide</span><h4>HubSpot Email Deliverability</h4><span class="src">Read on mailreach.co →</span></a>
+    </div>
+  </div>
+
+  <!-- MAILORA -->
+  <div class="work-group reveal" data-client="mailora">
+    <div class="wg-head">
+      <div class="wg-logo"><img src="Logos/Mailora.png" alt="Mailora" /></div>
+      <div class="wg-meta">
+        <h3>Mailora</h3>
+        <div class="wg-sub">Email verification &amp; validation tool — clean lists, fewer bounces, and protected deliverability.</div>
+        <div class="wg-project"><b>Project:</b> SEO blog cluster on email validation plus competitor-alternative comparison pages.</div>
+      </div>
+    </div>
+    <div class="results-snap">
+      <div class="rs" style="--rc:#0f9d58;--rt:#e6f5ec"><div class="rn">+35%</div><div class="rl">Organic traffic growth</div></div>
+      <div class="rs" style="--rc:#2b6cb0;--rt:#e7f0fa"><div class="rn">22</div><div class="rl">Keywords ranking</div></div>
+      <div class="rs" style="--rc:#ec4899;--rt:#fde7f1"><div class="rn">10</div><div class="rl">Blogs written</div></div>
+      <div class="rs" style="--rc:#7c3aed;--rt:#efe9fb"><div class="rn">18%</div><div class="rl">AI Overview / LLM citations</div></div>
+    </div>
+    <div class="work-grid">
+      <a class="post" href="https://usemailora.com/blog/how-to-verify-email-address" target="_blank" rel="noopener">
+        <span class="ptag">Guide</span><h4>How to Verify an Email Address</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/email-spam-filtering" target="_blank" rel="noopener">
+        <span class="ptag">Guide</span><h4>Email Spam Filtering</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/email-validator" target="_blank" rel="noopener">
+        <span class="ptag">Guide</span><h4>Email Validator</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/gmail-smtp-configuration" target="_blank" rel="noopener">
+        <span class="ptag">Technical</span><h4>Gmail SMTP Configuration</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/zerobounce-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>ZeroBounce Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/validity-everest-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>Validity Everest Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/glockapps-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>GlockApps Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/mailgenius-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>MailGenius Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/best-mxtoolbox-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>Best MXToolbox Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
+      <a class="post" href="https://usemailora.com/blog/mailreach-alternatives" target="_blank" rel="noopener">
+        <span class="ptag">Alternatives</span><h4>MailReach Alternatives</h4><span class="src">Read on usemailora.com →</span></a>
     </div>
   </div>
 
@@ -136,10 +231,21 @@
 <footer>
   <div class="wrap foot">
     <div>© <span id="year"></span> Navya Donkena · Content Marketing Specialist</div>
-    <div><a href="index.html">Home</a> · <a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://github.com/Content-TeamRG/tools/tree/main/croanalyzer" target="_blank" rel="noopener">GitHub</a></div>
+    <div><a href="index.html">Home</a> · <a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://cro.revvgrowthai.com/" target="_blank" rel="noopener">CROAnalyzer</a></div>
   </div>
 </footer>
 
 <script src="main.js"></script>
+<script>
+(function(){
+  const btns=document.querySelectorAll('#clientFilter button');
+  const groups=document.querySelectorAll('.work-group');
+  btns.forEach(b=>b.addEventListener('click',()=>{
+    btns.forEach(x=>x.classList.remove('active')); b.classList.add('active');
+    const c=b.dataset.c;
+    groups.forEach(g=>{ g.style.display=(c==='all'||g.dataset.client===c)?'':'none'; });
+  }));
+})();
+</script>
 </body>
 </html>
