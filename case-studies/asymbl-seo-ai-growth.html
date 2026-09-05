@@ -39,6 +39,7 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
 .chart-section{max-width:var(--maxw);margin:0 auto;padding:8px 24px 48px}
 .top-blogs-section{max-width:var(--maxw);margin:0 auto;padding:8px 24px 0}.top-blogs-head{max-width:640px;margin-bottom:18px}.top-blogs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.top-blog-card{position:relative;display:flex;flex-direction:column;min-height:190px;padding:20px 18px 18px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;transition:transform .18s,box-shadow .18s,border-color .18s}.top-blog-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9d2f3}.tb-rank{font-family:Sora,Inter,sans-serif;font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.04em}.top-blog-card h3{margin-top:10px;font-size:15px;line-height:1.32;font-weight:800}.tb-stats{display:flex;gap:18px;margin-top:auto;padding-top:16px}.tb-stats div{display:flex;flex-direction:column;gap:2px}.tb-stats strong{font-family:Sora,Inter,sans-serif;font-size:19px;font-weight:800;color:var(--ink)}.tb-stats span{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}.tb-badge{align-self:flex-start;margin-top:10px;padding:4px 9px;border-radius:999px;background:#f3f0ff;color:var(--accent);font-size:10.5px;font-weight:800;letter-spacing:.03em}
 .section-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:48px;max-width:var(--maxw);margin:0 auto;padding:70px 24px}.section-title{margin-bottom:16px;font-size:clamp(28px,4vw,42px);font-weight:800}.plain-list{display:grid;gap:12px;list-style:none}.plain-list li{padding:18px 18px 18px 20px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;color:var(--muted);box-shadow:0 12px 32px -28px rgba(13,16,32,.5)}.plain-list strong{display:block;margin-bottom:5px;color:var(--ink)}
+.pair-grid{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:12px;align-items:stretch}.pair-grid .section-title{margin-bottom:0}.pair-card{padding:18px 18px 18px 20px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;color:var(--muted);box-shadow:0 12px 32px -28px rgba(13,16,32,.5)}.pair-card strong{display:block;margin-bottom:5px;color:var(--ink)}
 .chart-card{padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#fbfcff,#f7f2ff);box-shadow:0 18px 44px -34px rgba(13,16,32,.55)}.chart-header{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:22px;flex-wrap:wrap}.chart-title{font-size:18px;font-weight:800}.chart-note{margin-top:6px;color:var(--muted);font-size:13px}
 .dual-chart-card{margin-top:0}
 .chart-legend-row{display:flex;align-items:center;gap:18px;flex:none}
@@ -48,9 +49,11 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
 .axis-label{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;fill:var(--muted)}
 .dual-val{font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;fill:var(--ink)}
 .dual-month{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;fill:var(--muted)}
+.gsc-proof{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}.gsc-proof img{display:block;width:100%;border-radius:12px;border:1px solid var(--line)}.gsc-proof figcaption{margin-top:10px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.geo-share{margin-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.geo-share-bar{flex:none;width:160px;height:10px;border-radius:999px;background:#ece8fb;overflow:hidden}.geo-share-fill{display:block;height:100%;border-radius:999px;background:var(--accent)}.geo-share-note{color:var(--muted);font-size:13.5px;line-height:1.5}.geo-share-note strong{color:var(--ink)}
 .work-section{max-width:var(--maxw);margin:0 auto;padding:18px 24px 76px}.work-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.post{display:flex;flex-direction:column;min-height:156px;padding:18px;border:1px solid var(--line);background:#fbfcff;transition:transform .18s,box-shadow .18s,border-color .18s}.post:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9d2f3}.post .ptag{align-self:flex-start;margin-bottom:12px;padding:4px 9px;border-radius:999px;background:#f3f0ff;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.post h3{font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.32;font-weight:800;flex:1}.post .src{margin-top:18px;color:var(--accent);font-size:13px;font-weight:800}
 .contact-section{padding:76px 24px 56px}.cta-band{max-width:var(--maxw);margin:0 auto;background:var(--ink);color:#fff;border-radius:26px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 30% -20%,rgba(147,51,234,.5),transparent),radial-gradient(500px 280px at 90% 120%,rgba(236,72,153,.45),transparent);opacity:.85}.cta-band > *{position:relative;z-index:1}.cta-band h2{font-size:clamp(28px,4vw,40px);font-weight:800}.cta-band p{margin:14px auto 0;color:#c7c9da;font-size:17px;max-width:48ch}.cta-actions{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s}.btn-light{background:#fff;color:var(--ink)}.btn-outline-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}.foot a{color:var(--muted)}.foot a:hover{color:var(--ink)}
-@media(max-width:900px){.topbar{height:auto;padding:20px 24px}.footer{padding:24px}.hero,.section-grid{grid-template-columns:1fr}.work-section,.top-blogs-section,.chart-section{padding-left:20px;padding-right:20px}.work-grid,.top-blogs-grid{grid-template-columns:1fr 1fr}.meta-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.topbar{height:auto;padding:20px 24px}.footer{padding:24px}.hero,.section-grid{grid-template-columns:1fr}.work-section,.top-blogs-section,.chart-section{padding-left:20px;padding-right:20px}.work-grid,.top-blogs-grid{grid-template-columns:1fr 1fr}.meta-grid{grid-template-columns:1fr}.pair-grid .po-1{order:1}.pair-grid .po-2{order:2}.pair-grid .po-3{order:3}.pair-grid .po-4{order:4}.pair-grid .po-5{order:5}.pair-grid .po-6{order:6}.pair-grid .po-7{order:7}.pair-grid .po-8{order:8}}
 @media(max-width:560px){.topbar,.footer{align-items:flex-start;flex-direction:column}.brand-lockup img{width:172px;max-height:58px}.work-grid,.top-blogs-grid{grid-template-columns:1fr}.work-head{align-items:start;flex-direction:column}}
 </style>
 </head>
@@ -123,6 +126,23 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
           </svg>
           <div class="trend-foot">May → Aug: <strong>+257%</strong> (23 → 82 clicks)</div>
         </div>
+        <div class="trend-card">
+          <div class="trend-head"><span class="trend-kicker">AI Sessions</span><span class="trend-badge">Blogs</span></div>
+          <svg class="trend-svg" viewBox="0 0 460 185" role="img" aria-label="Line chart of AI sessions from blogs by month: June 2026, 23; July 2026, 24; August 2026, 31.">
+            <line x1="14" y1="140" x2="446" y2="140" stroke="#e7e8f0" stroke-width="1" />
+            <polyline points="30,61.1 230,57.7 430,33.7" fill="none" stroke="#c30010" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="30" cy="61.1" r="4.5" fill="#c30010" />
+            <circle cx="230" cy="57.7" r="4.5" fill="#c30010" />
+            <circle cx="430" cy="33.7" r="4.5" fill="#c30010" />
+            <text x="30" y="49" text-anchor="middle" class="pt-val">23</text>
+            <text x="230" y="45.7" text-anchor="middle" class="pt-val">24</text>
+            <text x="430" y="21.7" text-anchor="middle" class="pt-val">31</text>
+            <text x="30" y="160" text-anchor="middle" class="pt-month">Jun</text>
+            <text x="230" y="160" text-anchor="middle" class="pt-month">Jul</text>
+            <text x="430" y="160" text-anchor="middle" class="pt-month">Aug</text>
+          </svg>
+          <div class="trend-foot">Jun → Aug: <strong>+35%</strong> (23 → 31 AI sessions)</div>
+        </div>
         <div class="trend-legend"><span class="legend-dash" aria-hidden="true"></span>Dashed = September, partial month (data through Sept 2)</div>
       </div>
     </section>
@@ -190,6 +210,10 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
           <text x="726.7" y="222" text-anchor="middle" class="dual-month">Jul</text>
           <text x="860" y="222" text-anchor="middle" class="dual-month">Aug</text>
         </svg>
+        <figure class="gsc-proof">
+          <img src="assets/gsc-asymbl.png" alt="Google Search Console dashboard showing 6.34K total clicks and 395K total impressions from Feb 1 to Sept 3, 2026" loading="lazy" />
+          <figcaption>Here's the GSC citation.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -221,9 +245,46 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
       </div>
     </section>
 
-    <section class="section-grid">
-      <div><h2 class="section-title">What Asymbl needed</h2><ul class="plain-list"><li><strong>Low search visibility.</strong> Asymbl was ranking for just 381 search queries, limiting its reach across high-value recruiting and HR-tech topics.</li><li><strong>Limited topical authority.</strong> With too little content across its core categories, Asymbl lacked the depth needed to build topical authority and establish category leadership.</li><li><strong>Low AI visibility.</strong> Asymbl had limited presence in AI and answer engines, leaving a growing discovery channel largely untapped.</li></ul></div>
-      <div><h2 class="section-title">What I owned</h2><ul class="plain-list"><li><strong>SEO strategy.</strong> Conducted monthly keyword research and built content strategies around high-value search opportunities and emerging category gaps.</li><li><strong>AI content automation.</strong> Built a multi-agent AI system to automate keyword research, outlines, and first-draft creation, scaling content production without sacrificing strategy.</li><li><strong>Content creation &amp; quality.</strong> Reviewed, edited, and refined AI-generated content to ensure accuracy, SEO performance, and Asymbl's thought leadership strategy.</li></ul></div>
+    <section class="chart-section" aria-label="AEO and GEO performance">
+      <div class="chart-card" aria-label="AI answer engine and generative engine citation growth">
+        <div class="chart-header">
+          <div><h2 class="chart-title">AI Answer Engine Visibility Growth</h2><p class="chart-note">Mentions, citations, and cited pages in AI answers (AEO/GEO), Nov 2025 vs. Aug 2026.</p></div>
+          <div class="chart-legend-row"><span class="chart-legend-item"><span class="chart-legend-dot" style="background:#9aa1c2"></span>Nov 2025</span><span class="chart-legend-item"><span class="chart-legend-dot" style="background:#6d28d9"></span>Aug 2026</span></div>
+        </div>
+        <svg class="dual-svg" viewBox="0 0 640 265" role="img" aria-label="Grouped bar chart. Mentions in AI answers: 7 in November 2025, 13 in August 2026. Citations: 10 in November 2025, 97 in August 2026. Cited pages: 7 in November 2025, 70 in August 2026.">
+          <line x1="30" y1="220" x2="610" y2="220" stroke="#c9ccd9" stroke-width="1" />
+          <rect x="70" y="206.7" width="55" height="13.3" rx="4" fill="#9aa1c2" />
+          <rect x="135" y="195.3" width="55" height="24.7" rx="4" fill="#6d28d9" />
+          <rect x="265" y="201" width="55" height="19" rx="4" fill="#9aa1c2" />
+          <rect x="330" y="35.7" width="55" height="184.3" rx="4" fill="#6d28d9" />
+          <rect x="460" y="206.7" width="55" height="13.3" rx="4" fill="#9aa1c2" />
+          <rect x="525" y="87" width="55" height="133" rx="4" fill="#6d28d9" />
+          <text x="97.5" y="198.7" text-anchor="middle" class="dual-val">7</text>
+          <text x="162.5" y="187.3" text-anchor="middle" class="dual-val">13</text>
+          <text x="292.5" y="193" text-anchor="middle" class="dual-val">10</text>
+          <text x="357.5" y="27.7" text-anchor="middle" class="dual-val">97</text>
+          <text x="487.5" y="198.7" text-anchor="middle" class="dual-val">7</text>
+          <text x="552.5" y="79" text-anchor="middle" class="dual-val">70</text>
+          <text x="130" y="245" text-anchor="middle" class="dual-month">Mentions in AI answers</text>
+          <text x="325" y="245" text-anchor="middle" class="dual-month">Citations</text>
+          <text x="520" y="245" text-anchor="middle" class="dual-month">Cited pages</text>
+        </svg>
+        <div class="geo-share">
+          <div class="geo-share-bar"><span class="geo-share-fill" style="width:71%"></span></div>
+          <p class="geo-share-note"><strong>71%</strong> of Asymbl's AI citations (77 of 97) came from blog content — the remaining 29% came from other website pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-grid pair-grid" aria-label="What Asymbl needed and what I owned">
+      <h2 class="section-title po-1">What Asymbl needed</h2>
+      <h2 class="section-title po-5">What I owned</h2>
+      <div class="pair-card po-2"><strong>Low search visibility.</strong> Asymbl was ranking for just 381 search queries, limiting its reach across high-value recruiting and HR-tech topics.</div>
+      <div class="pair-card po-6"><strong>SEO strategy.</strong> Conducted monthly keyword research and built content strategies around high-value search opportunities and emerging category gaps.</div>
+      <div class="pair-card po-3"><strong>Limited topical authority.</strong> With too little content across its core categories, Asymbl lacked the depth needed to build topical authority and establish category leadership.</div>
+      <div class="pair-card po-7"><strong>AI content automation.</strong> Built a multi-agent AI system to automate keyword research, outlines, and first-draft creation, scaling content production without sacrificing strategy.</div>
+      <div class="pair-card po-4"><strong>Low AI visibility.</strong> Asymbl had limited presence in AI and answer engines, leaving a growing discovery channel largely untapped.</div>
+      <div class="pair-card po-8"><strong>Content creation &amp; quality.</strong> Reviewed, edited, and refined AI-generated content to ensure accuracy, SEO performance, and Asymbl's thought leadership strategy.</div>
     </section>
 
     <section class="work-section" aria-label="Selected Asymbl content links">
@@ -237,10 +298,47 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
         <a class="post" href="https://www.asymbl.com/blog/recruiting-software" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Recruiting Software</h3><span class="src">Read on asymbl.com</span></a>
         <a class="post" href="https://www.asymbl.com/blog/salesforce-for-recruiting" target="_blank" rel="noopener"><span class="ptag">Use case</span><h3>Salesforce for Recruiting</h3><span class="src">Read on asymbl.com</span></a>
         <a class="post" href="https://www.asymbl.com/blog/best-applicant-tracking-system" target="_blank" rel="noopener"><span class="ptag">Comparison</span><h3>Best Applicant Tracking System</h3><span class="src">Read on asymbl.com</span></a>
-        <a class="post" href="https://www.asymbl.com/blog/ai-agents-for-recruiting" target="_blank" rel="noopener"><span class="ptag">AI thought leadership</span><h3>AI Agents for Recruiting</h3><span class="src">Read on asymbl.com</span></a>
-        <a class="post" href="https://www.asymbl.com/blog/ai-candidate-screening" target="_blank" rel="noopener"><span class="ptag">AI deep dive</span><h3>AI Candidate Screening</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-agents-for-recruiting" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Agents for Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-candidate-screening" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Candidate Screening</h3><span class="src">Read on asymbl.com</span></a>
         <a class="post" href="https://www.asymbl.com/blog/benefits-of-ai-in-recruitment" target="_blank" rel="noopener"><span class="ptag">Lead-generating blog</span><h3>Benefits of AI in Recruitment</h3><span class="src">Read on asymbl.com</span></a>
         <a class="post" href="https://www.asymbl.com/blog/salesforce-ats-system" target="_blank" rel="noopener"><span class="ptag">Lead-generating blog</span><h3>Salesforce ATS System</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/top-recruiting-crm-software" target="_blank" rel="noopener"><span class="ptag">Comparison</span><h3>Top Recruiting CRM Software</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/what-is-applicant-tracking-system" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>What Is an Applicant Tracking System?</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/applicant-tracking-system-for-staffing-agencies" target="_blank" rel="noopener"><span class="ptag">Use case</span><h3>Applicant Tracking System for Staffing Agencies</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/recruitment-metrics" target="_blank" rel="noopener"><span class="ptag">Metrics</span><h3>Recruitment Metrics</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/enterprise-recruitment-software" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Enterprise Recruitment Software</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/recruitment-process-automation" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Recruitment Process Automation</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/candidate-sourcing-strategies" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Candidate Sourcing Strategies</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-sourcing-tools-for-recruiting" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Sourcing Tools for Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-in-recruitment" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI in Recruitment</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/best-talent-intelligence-software-for-staffing-in-2026" target="_blank" rel="noopener"><span class="ptag">Comparison</span><h3>Best Talent Intelligence Software for Staffing in 2026</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/what-is-talent-relationship-management" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>What Is Talent Relationship Management?</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-acquisition-platform" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Acquisition Platform</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/what-is-candidate-tracking-system" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>What Is a Candidate Tracking System?</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-recruitment-strategies" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Recruitment Strategies</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-staffing-solutions" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Staffing Solutions</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-intelligence" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Intelligence</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-market-intelligence" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Market Intelligence</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-in-talent-acquisition" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI in Talent Acquisition</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/time-to-fill" target="_blank" rel="noopener"><span class="ptag">Metrics</span><h3>Time to Fill</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/cost-per-hire" target="_blank" rel="noopener"><span class="ptag">Metrics</span><h3>Cost per Hire</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/quality-of-hire" target="_blank" rel="noopener"><span class="ptag">Metrics</span><h3>Quality of Hire</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-acquisition-strategy" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Acquisition Strategy</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/recruitment-agency-software" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Recruitment Agency Software</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-acquisition-vs-recruitment" target="_blank" rel="noopener"><span class="ptag">Comparison</span><h3>Talent Acquisition vs Recruitment</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/staffing-software-solutions" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Staffing Software Solutions</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/talent-acquisition-analytics" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Talent Acquisition Analytics</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/time-to-hire-vs-time-to-fill" target="_blank" rel="noopener"><span class="ptag">Comparison</span><h3>Time to Hire vs Time to Fill</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-in-staffing" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI in Staffing</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/high-volume-recruiting" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>High-Volume Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/automated-interview-scheduling" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Automated Interview Scheduling</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-recruiting-software" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Recruiting Software</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/candidate-management-software-staffing-recruiting" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Candidate Management Software for Staffing &amp; Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-candidate-matching-from-rankings-to-real-reasoning" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI Candidate Matching: From Rankings to Real Reasoning</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/search-and-match-recruiting" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Search and Match Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/agentic-ai-implementation-recruiting" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>Agentic AI Implementation in Recruiting</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/ai-sdr-digital-workers" target="_blank" rel="noopener"><span class="ptag">AI</span><h3>AI SDR Digital Workers</h3><span class="src">Read on asymbl.com</span></a>
+        <a class="post" href="https://www.asymbl.com/blog/what-is-a-digital-worker" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>What Is a Digital Worker?</h3><span class="src">Read on asymbl.com</span></a>
       </div>
     </section>
     <section class="contact-section" id="contact"><div class="cta-band"><h2>Let's make your content impossible to ignore</h2><p>Open to content marketing roles, freelance projects, and AI-content collaborations. Let's talk.</p><div class="cta-actions"><a class="btn btn-light" href="mailto:navyadonkena02@gmail.com">navyadonkena02@gmail.com</a><a class="btn btn-outline-light" href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">Connect on LinkedIn →</a></div></div></section>
