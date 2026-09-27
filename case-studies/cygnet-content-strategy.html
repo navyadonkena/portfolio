@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cygnet Technical Content Case Study | Navya Donkena</title>
+<meta name="description" content="How I helped Cygnet turn complex data, AI, and cloud topics into a library of in-depth technical guides for enterprise buyers." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{--ink:#0d1020;--muted:#5b6178;--line:#e7e8f0;--white:#fff;--accent:#6d28d9;--grad:linear-gradient(100deg,#6d28d9 0%,#9333ea 40%,#ec4899 100%);--shadow:0 1px 2px rgba(13,16,32,.04),0 18px 50px -20px rgba(13,16,32,.28);--maxw:1120px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Sora,Inter,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.08}
+.page{min-height:100vh;padding:0}.sheet{width:100%;background:var(--white)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;max-width:var(--maxw);height:86px;margin:0 auto;padding:0 24px}
+.brand-lockup{display:flex;align-items:center;gap:14px}.brand-lockup img{width:230px;max-height:72px;object-fit:contain}
+.brand-word{font-family:Sora,Inter,system-ui,sans-serif;font-size:26px;font-weight:800;letter-spacing:-.02em}
+.case-label,.eyebrow{font-size:12px;font-weight:800;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}.toplinks{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.nav-link{font-size:14px;font-weight:700;color:var(--muted)}
+.hero{max-width:var(--maxw);margin:0 auto;padding:64px 24px 56px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px}.eyebrow::before{content:"";width:34px;height:2px;background:var(--grad)}
+h1{max-width:780px;font-size:clamp(28px,4.6vw,46px);font-weight:800}.hl-purple{color:var(--accent)}.lead{max-width:700px;margin-top:22px;font-size:18px;color:var(--muted);line-height:1.65}
+.meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px;max-width:760px}.meta-pill{min-height:86px;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fbfcff;box-shadow:0 12px 28px -24px rgba(13,16,32,.55)}.meta-pill strong{display:block;margin-bottom:8px;font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}.meta-pill span{font-size:16px;font-weight:800}
+.topics-section{max-width:var(--maxw);margin:0 auto;padding:8px 24px 48px}
+.topics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.topic-card{padding:22px 20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#fbfcff,#f7f2ff);box-shadow:0 18px 42px -34px rgba(13,16,32,.55)}
+.topic-card strong{display:block;font-family:Sora,Inter,sans-serif;font-size:17px;font-weight:800;margin-bottom:8px}
+.topic-card span{font-size:13.5px;color:var(--muted);line-height:1.5}
+.topic-count{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:30px;padding:0 8px;border-radius:999px;background:var(--accent);color:#fff;font-family:Sora,Inter,sans-serif;font-size:14px;font-weight:800;margin-bottom:12px}
+.section-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:48px;max-width:var(--maxw);margin:0 auto;padding:70px 24px}.section-title{margin-bottom:16px;font-size:clamp(19px,3vw,34px);font-weight:800}.plain-list{display:grid;gap:12px;list-style:none}.plain-list li{padding:18px 18px 18px 20px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;color:var(--muted);box-shadow:0 12px 32px -28px rgba(13,16,32,.5)}.plain-list strong{display:block;margin-bottom:5px;color:var(--ink)}
+.pair-grid{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:12px;align-items:stretch}.pair-grid .section-title{margin-bottom:0}.pair-card{padding:18px 18px 18px 20px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;color:var(--muted);box-shadow:0 12px 32px -28px rgba(13,16,32,.5)}.pair-card strong{display:block;margin-bottom:5px;color:var(--ink)}
+.work-section{max-width:var(--maxw);margin:0 auto;padding:18px 24px 76px}.work-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.post{display:flex;flex-direction:column;min-height:166px;padding:18px;border:1px solid var(--line);background:#fbfcff;transition:transform .18s,box-shadow .18s,border-color .18s}.post:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9d2f3}.post .ptag{align-self:flex-start;margin-bottom:12px;padding:4px 9px;border-radius:999px;background:#f3f0ff;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.post h3{font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.32;font-weight:800;flex:1}.post p{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.5}.post .src{margin-top:14px;color:var(--accent);font-size:13px;font-weight:800}
+.contact-section{padding:76px 24px 56px}.cta-band{max-width:var(--maxw);margin:0 auto;background:var(--ink);color:#fff;border-radius:26px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 30% -20%,rgba(147,51,234,.5),transparent),radial-gradient(500px 280px at 90% 120%,rgba(236,72,153,.45),transparent);opacity:.85}.cta-band > *{position:relative;z-index:1}.cta-band h2{font-size:clamp(28px,4vw,40px);font-weight:800}.cta-band p{margin:14px auto 0;color:#c7c9da;font-size:17px;max-width:48ch}.cta-actions{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s}.btn-light{background:#fff;color:var(--ink)}.btn-outline-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}.foot a{color:var(--muted)}.foot a:hover{color:var(--ink)}
+@media(max-width:900px){.topbar{height:auto;padding:20px 24px}.section-grid{grid-template-columns:1fr}.work-section,.topics-section{padding-left:20px;padding-right:20px}.work-grid,.topics-grid{grid-template-columns:1fr 1fr}.meta-grid{grid-template-columns:1fr}.pair-grid .po-1{order:1}.pair-grid .po-2{order:2}.pair-grid .po-3{order:3}.pair-grid .po-4{order:4}.pair-grid .po-5{order:5}.pair-grid .po-6{order:6}}
+@media(max-width:560px){.topbar,.footer{align-items:flex-start;flex-direction:column}.brand-lockup img{width:172px;max-height:58px}.work-grid,.topics-grid{grid-template-columns:1fr}.work-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="page">
+  <article class="sheet">
+    <header class="topbar">
+      <a class="brand-lockup" href="../index.html#top" aria-label="Back to Navya portfolio"><span class="brand-word">Cygnet</span><span class="case-label">Customer Story</span></a>
+      <div class="toplinks"><a class="nav-link" href="../index.html#top">Home</a><a class="nav-link" href="index.html">All case studies</a></div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">Technical content strategy &amp; writing</div>
+      <h1>Turning Cygnet's Data, AI &amp; Cloud Expertise Into <span class="hl-purple">9 In-Depth Guides</span> for Enterprise Buyers</h1>
+      <p class="lead">Cygnet needed long-form content that could hold its own with a technical, enterprise audience evaluating data, AI, and cloud partners. I researched, structured, and wrote a library of guides spanning data analytics, AI strategy, cloud migration, and data engineering — built to establish credibility with the people actually making these decisions.</p>
+      <div class="meta-grid" aria-label="Project scope">
+        <div class="meta-pill"><strong>Output</strong><span>9 long-form guides</span></div>
+        <div class="meta-pill"><strong>Focus</strong><span>Data, AI &amp; cloud content</span></div>
+        <div class="meta-pill"><strong>Audience</strong><span>Enterprise technical buyers</span></div>
+      </div>
+    </section>
+
+    <section class="topics-section" aria-label="Content coverage by topic">
+      <div class="topics-grid">
+        <div class="topic-card"><span class="topic-count">3</span><strong>Data Analytics &amp; Engineering</strong><span>From the fundamentals of business analytics to designing scalable data pipeline architecture.</span></div>
+        <div class="topic-card"><span class="topic-count">1</span><strong>AI Strategy</strong><span>A step-by-step framework for enterprises building an AI roadmap from pilot to production.</span></div>
+        <div class="topic-card"><span class="topic-count">3</span><strong>Cloud &amp; AWS Migration</strong><span>Migration risk, the 7Rs framework, and how to choose a cloud enterprise architecture partner.</span></div>
+        <div class="topic-card"><span class="topic-count">2</span><strong>Data Integration</strong><span>Common enterprise data integration failure points and how to solve them.</span></div>
+      </div>
+    </section>
+
+    <section class="section-grid pair-grid" aria-label="What Cygnet needed and what I owned">
+      <h2 class="section-title po-1">What Cygnet needed</h2>
+      <h2 class="section-title po-4">What I owned</h2>
+      <div class="pair-card po-2"><strong>Credibility with technical buyers</strong> Cygnet's audience — data, AI, and cloud decision-makers — needed content that demonstrated real depth, not surface-level marketing copy.</div>
+      <div class="pair-card po-5"><strong>Research &amp; technical accuracy</strong> Researched frameworks like the AWS 7Rs and the data analytics maturity curve to ground each guide in accurate, defensible detail.</div>
+      <div class="pair-card po-3"><strong>Coverage across a broad technical stack</strong> Topics spanned data analytics, AI strategy, cloud migration, and data engineering — each requiring a different depth of technical fluency.</div>
+      <div class="pair-card po-6"><strong>Long-form guide writing</strong> Wrote and structured 9 in-depth guides end to end, translating complex technical topics into clear, buyer-ready content.</div>
+    </section>
+
+    <section class="work-section" aria-label="Cygnet blogs I worked on">
+      <div class="work-head"><div><h2 class="section-title">Guides I wrote for Cygnet</h2></div></div>
+      <div class="work-grid">
+        <a class="post" href="https://www.cygnet.one/blog/data-analytics-for-business-a-complete-2026-guide/" target="_blank" rel="noopener"><span class="ptag">Guide</span><h3>Data Analytics for Business: A Complete 2026 Guide</h3><p>Objective-setting, tool selection, and predictive analytics for business forecasting.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/how-to-build-an-ai-strategy-roadmap-for-your-enterprise/" target="_blank" rel="noopener"><span class="ptag">AI Strategy</span><h3>AI Strategy Roadmap: A Step-by-Step Framework Guide</h3><p>A 7-step framework for moving enterprise AI from pilot to scalable, governed production.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/the-4-types-of-data-analytics-and-how-to-use-them/" target="_blank" rel="noopener"><span class="ptag">Data</span><h3>The 4 Types of Data Analytics and How to Use Them</h3><p>The progressive hierarchy of descriptive, diagnostic, predictive, and prescriptive analytics.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/data-engineering-services-how-they-work-and-why-they-matter/" target="_blank" rel="noopener"><span class="ptag">Data Engineering</span><h3>Data Engineering Services Explained | 2026 Guide</h3><p>What data engineering services do, and what to evaluate when choosing a provider.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/cloud-migration-challenges-a-complete-guide-to-planning-and-risk/" target="_blank" rel="noopener"><span class="ptag">Cloud</span><h3>Cloud Migration Challenges: What to Know Before You Move</h3><p>Key migration risks — assessment, downtime, data loss — and how sequencing reduces them.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/aws-migration-strategy-the-7rs-and-a-step-by-step-execution-plan/" target="_blank" rel="noopener"><span class="ptag">Cloud / AWS</span><h3>AWS Migration Strategy Guide 2026</h3><p>The 7Rs of AWS migration and a step-by-step execution plan.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/the-top-data-integration-challenges-enterprises-face/" target="_blank" rel="noopener"><span class="ptag">Data Integration</span><h3>10 Data Integration Challenges and How to Solve Them</h3><p>The ten most common enterprise data integration problems and how to resolve them.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/how-to-build-a-scalable-data-pipeline-architecture/" target="_blank" rel="noopener"><span class="ptag">Data Engineering</span><h3>How to Build a Scalable Data Pipeline Architecture</h3><p>Architectural decisions behind ingestion, quality enforcement, orchestration, and governance.</p><span class="src">Read on cygnet.one</span></a>
+        <a class="post" href="https://www.cygnet.one/blog/choosing-the-right-cloud-enterprise-architecture-partner/" target="_blank" rel="noopener"><span class="ptag">Cloud / Comparison</span><h3>Cloud Enterprise Architecture: How to Pick a Partner</h3><p>A six-criteria framework for evaluating cloud architecture partners.</p><span class="src">Read on cygnet.one</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="cta-band"><h2>Let's make your content impossible to ignore</h2><p>Open to content marketing roles, freelance projects, and AI-content collaborations. Let's talk.</p><div class="cta-actions"><a class="btn btn-light" href="mailto:navyadonkena02@gmail.com">navyadonkena02@gmail.com</a><a class="btn btn-outline-light" href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">Connect on LinkedIn →</a></div></div></section>
+    <footer><div class="foot"><div>© 2026 Navya Donkena · Content Marketing Specialist</div><div><a href="../work.html">Writing</a> · <a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://cro.revvgrowthai.com/" target="_blank" rel="noopener">CROAnalyzer</a></div></div></footer>
+  </article>
+</main>
+</body>
+</html>
