@@ -43,13 +43,12 @@ h1{max-width:760px;font-size:clamp(19px,3vw,34px);font-weight:800}.hl-green{colo
 .chart-legend-row{display:flex;align-items:center;gap:18px;flex:none}.chart-legend-item{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:800;color:var(--ink);white-space:nowrap}.chart-legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
 .dual-svg{width:100%;height:auto;display:block;margin-top:10px}.axis-label{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;fill:var(--muted)}.dual-val{font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:800;fill:var(--ink)}.dual-month{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;fill:var(--muted)}
 .geo-share{margin-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.geo-share-bar{flex:none;width:160px;height:10px;border-radius:999px;background:#ece8fb;overflow:hidden}.geo-share-fill{display:block;height:100%;border-radius:999px;background:var(--accent)}.geo-share-note{color:var(--muted);font-size:13.5px;line-height:1.5}.geo-share-note strong{color:var(--ink)}
-.period-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}.period-stat{padding:20px;border:1px solid var(--line);border-radius:16px;background:#fbfcff;text-align:center;box-shadow:0 12px 28px -24px rgba(13,16,32,.55)}.period-stat strong{display:block;font-family:Sora,Inter,sans-serif;font-size:32px;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.period-stat span{display:block;margin-top:6px;color:var(--muted);font-size:13px;font-weight:600}
 .lead-board{display:grid;gap:9px}.lb-row{display:grid;grid-template-columns:150px 1fr auto;align-items:center;gap:14px}.lb-name{font-size:13px;font-weight:700;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lb-bar-track{height:10px;border-radius:999px;background:#ece8fb;overflow:hidden}.lb-bar-fill{display:block;height:100%;border-radius:999px;background:var(--grad)}.lb-stats{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);white-space:nowrap}.lb-leads{font-family:Sora,Inter,sans-serif;font-weight:800;color:var(--accent);font-size:13px;min-width:40px;text-align:right}
 .work-section{max-width:var(--maxw);margin:0 auto;padding:18px 24px 76px}.work-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:18px}.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.post{display:flex;flex-direction:column;min-height:156px;padding:18px;border:1px solid var(--line);background:#fbfcff;transition:transform .18s,box-shadow .18s,border-color .18s}.post:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#d9d2f3}.post .ptag{align-self:flex-start;margin-bottom:12px;padding:4px 9px;border-radius:999px;background:#f3f0ff;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.post h3{font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.32;font-weight:800;flex:1}.post .src{margin-top:18px;color:var(--accent);font-size:13px;font-weight:800}
 .contact-section{padding:76px 24px 56px}.cta-band{max-width:var(--maxw);margin:0 auto;background:var(--ink);color:#fff;border-radius:26px;padding:56px 40px;text-align:center;position:relative;overflow:hidden}.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 30% -20%,rgba(147,51,234,.5),transparent),radial-gradient(500px 280px at 90% 120%,rgba(236,72,153,.45),transparent);opacity:.85}.cta-band > *{position:relative;z-index:1}.cta-band h2{font-size:clamp(28px,4vw,40px);font-weight:800}.cta-band p{margin:14px auto 0;color:#c7c9da;font-size:17px;max-width:48ch}
 .cta-actions{margin-top:28px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;transition:transform .15s,box-shadow .15s,background .15s}.btn-light{background:#fff;color:var(--ink)}.btn-outline-light{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
 footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;color:var(--muted);font-size:14px}.foot a{color:var(--muted)}.foot a:hover{color:var(--ink)}
-@media(max-width:900px){.topbar{height:auto;padding:20px 24px}.footer{padding:24px}.hero,.section-grid{grid-template-columns:1fr}.work-section,.chart-section{padding-left:20px;padding-right:20px}.work-grid{grid-template-columns:1fr 1fr}.meta-grid,.period-stats{grid-template-columns:1fr}.pair-grid .po-1{order:1}.pair-grid .po-2{order:2}.pair-grid .po-3{order:3}.pair-grid .po-4{order:4}.pair-grid .po-5{order:5}.pair-grid .po-6{order:6}.lb-row{grid-template-columns:110px 1fr auto}.lb-stats{display:none}}
+@media(max-width:900px){.topbar{height:auto;padding:20px 24px}.footer{padding:24px}.hero,.section-grid{grid-template-columns:1fr}.work-section,.chart-section{padding-left:20px;padding-right:20px}.work-grid{grid-template-columns:1fr 1fr}.meta-grid{grid-template-columns:1fr}.pair-grid .po-1{order:1}.pair-grid .po-2{order:2}.pair-grid .po-3{order:3}.pair-grid .po-4{order:4}.pair-grid .po-5{order:5}.pair-grid .po-6{order:6}.lb-row{grid-template-columns:110px 1fr auto}.lb-stats{display:none}}
 @media(max-width:560px){.topbar,.footer{align-items:flex-start;flex-direction:column}.brand-lockup img{width:172px;max-height:58px}.work-grid{grid-template-columns:1fr}.work-head{align-items:start;flex-direction:column}}
 </style>
 </head>
@@ -66,10 +65,9 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
         <div class="eyebrow">SEO + AEO lead recovery</div>
         <h1>How I helped Skuad turn declining leads into a <span class="hl-green">2x monthly recovery</span>.</h1>
         <ul class="lead-list">
-          <li><strong>2x</strong> monthly leads, June → July.</li>
-          <li><strong>85%</strong> of July's leads already reached by August 16.</li>
-          <li><strong>80%</strong> of June's monthly leads landed in a single August week.</li>
-          <li><strong>65%</strong> lift in weekly impressions for the June content cohort.</li>
+          <li><strong>251</strong> leads generated over 6 months.</li>
+          <li><strong>300+</strong> SEO and AEO optimizations shipped.</li>
+          <li><strong>9.09M</strong> impressions and <strong>8.16K</strong> clicks from optimized pages (Jun–Sept 2026).</li>
         </ul>
         <div class="meta-grid" aria-label="Project scope">
           <div class="meta-pill"><strong>Timeline</strong><span>3 months</span></div>
@@ -78,6 +76,23 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
         </div>
       </div>
       <div class="trend-panel" aria-label="Lead recovery trends">
+        <div class="trend-card">
+          <div class="trend-head"><span class="trend-kicker">Whole-site performance</span><span class="trend-badge">May–Sept 2026</span></div>
+          <svg class="trend-svg" viewBox="0 0 330 170" role="img" aria-label="Bar chart on a log scale: 15.3 million impressions, 27,000 clicks, 251 leads, site-wide May to September 2026.">
+            <line x1="14" y1="140" x2="316" y2="140" stroke="#e7e8f0" stroke-width="1" />
+            <rect x="30" y="20" width="60" height="120" rx="6" fill="#000080" />
+            <rect x="135" y="78" width="60" height="62" rx="6" fill="#6d28d9" />
+            <rect x="240" y="120" width="60" height="20" rx="6" fill="#008000" />
+            <text x="60" y="12" text-anchor="middle" class="pt-val">15.3M</text>
+            <text x="165" y="70" text-anchor="middle" class="pt-val">27K</text>
+            <text x="270" y="112" text-anchor="middle" class="pt-val">251</text>
+            <text x="60" y="160" text-anchor="middle" class="pt-month">Impressions</text>
+            <text x="165" y="160" text-anchor="middle" class="pt-month">Clicks</text>
+            <text x="270" y="160" text-anchor="middle" class="pt-month">Leads</text>
+          </svg>
+          <div class="trend-foot">Bars on a log scale (order of magnitude only). Site-wide totals — <strong>not</strong> optimized-pages-only.</div>
+          <div class="trend-foot">Of that, optimized pages drove <strong>9.09M</strong> impressions and <strong>8.16K</strong> clicks (Jun–Sept 2026) — roughly <strong>59%</strong> of impressions and <strong>30%</strong> of clicks site-wide.</div>
+        </div>
         <div class="trend-card">
           <div class="trend-head"><span class="trend-kicker">Monthly leads</span><span class="trend-badge">Tracked</span></div>
           <svg class="trend-svg" viewBox="0 0 460 185" role="img" aria-label="Line chart of monthly leads: June 10, July 20, August 1-16 partial 17.">
@@ -139,27 +154,12 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
       <div class="pair-card po-8" style="grid-column:2/3"><strong>Editorial management.</strong> Briefed, edited, managed, and guided five writers end to end.</div>
     </section>
 
-    <section class="chart-section" aria-label="Additional search and AI discovery signals">
-      <h2 class="section-title">More Signals From the Recovery</h2>
-      <p class="section-sub">AI-discovery sessions and ranking position also moved for the June content cohort.</p>
-      <div class="meta-grid" style="margin-top:0">
-        <div class="meta-pill"><strong>AI-discovery sessions</strong><span>18 peak weekly sessions</span></div>
-        <div class="meta-pill"><strong>Average position</strong><span>12.0 weighted avg</span></div>
-        <div class="meta-pill"><strong>Weekly impressions</strong><span>+65% (57K → 94K)</span></div>
-      </div>
-    </section>
-
-    <section class="chart-section" aria-label="Content performance: impressions, clicks and leads">
-      <h2 class="section-title">Content Performance: Impressions, Clicks &amp; Leads</h2>
-      <p class="section-sub">May – September 2026 totals, plus tracked results for the pages this data is measured on.</p>
-      <div class="period-stats" aria-label="May to September 2026 totals">
-        <div class="period-stat"><strong>27K</strong><span>Clicks</span></div>
-        <div class="period-stat"><strong>15.3M</strong><span>Impressions</span></div>
-        <div class="period-stat"><strong>251</strong><span>Leads</span></div>
-      </div>
+    <section class="chart-section" aria-label="Leads by optimized page">
+      <h2 class="section-title">Leads by Optimized Page</h2>
+      <p class="section-sub">Tracked impressions, clicks, and leads for the pages with lead attribution — all BOFU, commercial-intent content.</p>
       <div class="chart-card" aria-label="Leads by page chart">
         <div class="chart-header">
-          <div><h2 class="chart-title">Leads by Optimized Page</h2><p class="chart-note">All BOFU, commercial-intent pages. Bar length = leads generated (max 5). Tracked data only — not every optimized page has lead attribution.</p></div>
+          <div><p class="chart-note">Bar length = leads generated (max 5). Tracked data only — not every optimized page has lead attribution.</p></div>
         </div>
         <div class="geo-share">
           <div class="geo-share-bar"><span class="geo-share-fill" style="width:36.6%"></span></div>
