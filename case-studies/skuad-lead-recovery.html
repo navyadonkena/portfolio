@@ -92,10 +92,12 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
       <div class="trend-panel" aria-label="Lead recovery trends">
         <div class="trend-card">
           <div class="trend-head"><span class="trend-kicker">Whole-site performance</span><span class="trend-badge">May–Sept 2026</span></div>
-          <svg class="trend-svg" viewBox="0 0 330 170" role="img" aria-label="Bar chart on a log scale: 15.3 million impressions, 27,000 clicks, 251 leads, site-wide May to September 2026.">
+          <svg class="trend-svg" viewBox="0 0 330 186" role="img" aria-label="Stacked bar chart on a log scale: 15.3 million impressions (9.09 million from optimized pages), 27,000 clicks (8.16K from optimized pages), and 251 leads, site-wide May to September 2026.">
             <line x1="14" y1="140" x2="316" y2="140" stroke="#e7e8f0" stroke-width="1" />
-            <rect x="30" y="20" width="60" height="120" rx="6" fill="#000080" />
-            <rect x="135" y="78" width="60" height="62" rx="6" fill="#6d28d9" />
+            <rect x="30" y="20" width="60" height="49" rx="4" fill="#000080" fill-opacity=".22" />
+            <rect x="30" y="69" width="60" height="71" rx="4" fill="#000080" />
+            <rect x="135" y="78" width="60" height="43" rx="4" fill="#6d28d9" fill-opacity=".22" />
+            <rect x="135" y="121" width="60" height="19" rx="4" fill="#6d28d9" />
             <rect x="240" y="120" width="60" height="20" rx="6" fill="#008000" />
             <text x="60" y="12" text-anchor="middle" class="pt-val">15.3M</text>
             <text x="165" y="70" text-anchor="middle" class="pt-val">27K</text>
@@ -103,8 +105,10 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
             <text x="60" y="160" text-anchor="middle" class="pt-month">Impressions</text>
             <text x="165" y="160" text-anchor="middle" class="pt-month">Clicks</text>
             <text x="270" y="160" text-anchor="middle" class="pt-month">Leads</text>
+            <rect x="14" y="173" width="9" height="9" rx="2" fill="#000080" />
+            <text x="27" y="181" class="pt-month" style="font-size:9.5px">From optimized pages</text>
           </svg>
-          <div class="trend-foot">Of that, optimized pages drove <strong>9.09M</strong> impressions and <strong>8.16K</strong> clicks (Jun–Sept 2026) — roughly <strong>59%</strong> of impressions and <strong>30%</strong> of clicks site-wide.</div>
+          <div class="trend-foot">Of that, optimized pages drove <strong>9.09M</strong> impressions and <strong>8.16K</strong> clicks (Jun–Sept 2026) — roughly <strong>59%</strong> of impressions and <strong>30%</strong> of clicks site-wide (darker segment of each bar).</div>
         </div>
         <div class="trend-card">
           <div class="trend-head"><span class="trend-kicker">Monthly leads</span><span class="trend-badge">Tracked</span></div>
@@ -128,27 +132,16 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
       </div>
     </section>
 
-    <section class="section-grid pair-grid" aria-label="What was broken and what I owned">
-      <h2 class="section-title po-1">What was broken</h2>
-      <h2 class="section-title po-4">What I owned</h2>
-      <div class="pair-card po-2"><strong>Lead volume was dropping.</strong> Pages that once brought leads were not converting at the same level anymore.</div>
-      <div class="pair-card po-5"><strong>Recovery strategy.</strong> Identified gaps and opportunities in high-intent pages for AEO and search ranking.</div>
-      <div class="pair-card po-3"><strong>Weak intent match.</strong> EOR, payroll, compliance, and country pages needed clearer answers for high-intent queries.</div>
-      <div class="pair-card po-6"><strong>Content system.</strong> Built a quality-driven content process, writer workflow, and research automations for compliance-heavy information.</div>
-      <div class="pair-card po-7" style="grid-column:1/2"><strong>AI discoverability was missing.</strong> Content wasn't structured for answer engines, only traditional search rankings.</div>
-      <div class="pair-card po-8" style="grid-column:2/3"><strong>Editorial management.</strong> Briefed, edited, managed, and guided five writers end to end.</div>
-    </section>
-
     <section class="chart-section" aria-label="Leads by optimized page">
       <h2 class="section-title">Leads by Optimized Page</h2>
       <p class="section-sub">Tracked impressions, clicks, and leads for the pages with lead attribution — all BOFU, commercial-intent content.</p>
       <div class="chart-card" aria-label="Leads by page chart">
         <div class="chart-header">
-          <div><p class="chart-note">Bar length = leads generated (max 5). Tracked data only — not every optimized page has lead attribution.</p></div>
+          <div><p class="chart-note">Bar length = leads generated.</p></div>
         </div>
         <div class="geo-share">
           <div class="geo-share-bar"><span class="geo-share-fill" style="width:36.6%"></span></div>
-          <p class="geo-share-note"><strong>15 of 41</strong> optimized blogs are already generating leads, totaling <strong>27 leads</strong> tracked so far.</p>
+          <p class="geo-share-note"><strong>15 of 41</strong> optimized blogs are already generating leads.</p>
         </div>
         <div class="lead-board" style="margin-top:22px" aria-label="Leads, impressions and clicks by page">
           <div class="lb-row"><span class="lb-name">EOR: Malaysia</span><div class="lb-bar-track"><span class="lb-bar-fill" style="width:100%"></span></div><span class="lb-stats"><span>15.7K impr · 49 clicks</span><span class="lb-leads">5</span></span></div>
@@ -168,6 +161,17 @@ footer{padding:40px 0;border-top:1px solid var(--line);margin-top:20px}.foot{max
           <div class="lb-row"><span class="lb-name">Best EOR: UAE</span><div class="lb-bar-track"><span class="lb-bar-fill" style="width:20%"></span></div><span class="lb-stats"><span>1.3K impr · 6 clicks</span><span class="lb-leads">1</span></span></div>
         </div>
       </div>
+    </section>
+
+    <section class="section-grid pair-grid" aria-label="What was broken and what I owned">
+      <h2 class="section-title po-1">What was broken</h2>
+      <h2 class="section-title po-4">What I owned</h2>
+      <div class="pair-card po-2"><strong>Lead volume was dropping.</strong> Pages that once brought leads were not converting at the same level anymore.</div>
+      <div class="pair-card po-5"><strong>Recovery strategy.</strong> Identified gaps and opportunities in high-intent pages for AEO and search ranking.</div>
+      <div class="pair-card po-3"><strong>Weak intent match.</strong> EOR, payroll, compliance, and country pages needed clearer answers for high-intent queries.</div>
+      <div class="pair-card po-6"><strong>Content system.</strong> Built a quality-driven content process, writer workflow, and research automations for compliance-heavy information.</div>
+      <div class="pair-card po-7" style="grid-column:1/2"><strong>AI discoverability was missing.</strong> Content wasn't structured for answer engines, only traditional search rankings.</div>
+      <div class="pair-card po-8" style="grid-column:2/3"><strong>Editorial management.</strong> Briefed, edited, managed, and guided five writers end to end.</div>
     </section>
 
     <section class="work-section" aria-label="Selected Skuad content links">
