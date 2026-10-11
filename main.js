@@ -13,3 +13,8 @@ const io=new IntersectionObserver((entries)=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
 },{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// back to top
+document.querySelectorAll('.back-top').forEach(a=>a.addEventListener('click',e=>{
+  e.preventDefault();
+  window.scrollTo({top:0,behavior:'smooth'});
+}));
