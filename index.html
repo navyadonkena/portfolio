@@ -17,7 +17,6 @@
   <div class="wrap nav-inner">
     <a class="logo" href="#top"><span class="dot"></span>Navya Donkena</a>
     <nav class="nav-links" id="navLinks">
-      <a href="#results">Results</a>
       <a href="case-studies/index.html">Case studies</a>
       <a href="#services">What I do</a>
       <a href="ai-projects.html">AI Projects</a>
@@ -33,7 +32,7 @@
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow"><span class="pulse"></span>Content Marketing Specialist · B2B SaaS</span>
-      <h1 class="hero-title">Content Marketer &amp; <span class="grad-text">AI Engineer</span> for B2B SaaS</h1>
+      <h1 class="hero-title"><span class="grad-text">AI</span> Content Marketer &amp; Engineer <span class="grad-text">for B2B SaaS</span></h1>
       <ul class="hero-points">
         <li><strong>7+ years</strong> in content and growth</li>
         <li><strong>25+ brands</strong> scaled organically</li>
@@ -44,13 +43,15 @@
       </div>
     </div>
     <div class="hero-visual">
-      <svg class="venn" viewBox="0 0 440 430" role="img" aria-label="Venn diagram showing SEO, Content, and AI overlapping">
+      <svg class="venn" viewBox="0 0 440 430" role="img" aria-label="Venn diagram showing SEO, Content, and AI overlapping, with Marketer and Engineer at the center where all three meet">
         <circle cx="165" cy="165" r="148" class="venn-c venn-c1" />
         <circle cx="275" cy="165" r="148" class="venn-c venn-c2" />
         <circle cx="220" cy="272" r="148" class="venn-c venn-c3" />
-        <text x="95" y="130" class="venn-lbl">SEO</text>
-        <text x="300" y="130" class="venn-lbl" text-anchor="end">Content</text>
-        <text x="220" y="372" class="venn-lbl" text-anchor="middle">AI</text>
+        <text x="88" y="118" text-anchor="middle" class="venn-lbl">SEO</text>
+        <text x="352" y="118" text-anchor="middle" class="venn-lbl">Content</text>
+        <text x="220" y="369" text-anchor="middle" class="venn-lbl">AI</text>
+        <text x="220" y="196" text-anchor="middle" class="venn-lbl venn-lbl-center">Marketer &amp;</text>
+        <text x="220" y="216" text-anchor="middle" class="venn-lbl venn-lbl-center">Engineer</text>
       </svg>
     </div>
   </div>
@@ -109,7 +110,6 @@
 <section class="block" id="testimonials">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="kicker">Praise</div>
       <h2>What people I've worked with say</h2>
       <p>Founders, marketers, and engineers from the SaaS brands and teams I've partnered with.</p>
     </div>
@@ -173,9 +173,62 @@
       <h2>From freelancer to AI content engineer</h2>
       <p>Click a year to see what I was building.</p>
     </div>
-    <div class="periodic reveal">
-      <div class="periodic-grid" id="yearGrid"></div>
-      <div class="periodic-detail" id="yearDetail"></div>
+    <div class="year-tabs reveal" id="yearGrid"></div>
+    <div class="year-panel reveal" id="yearDetail"></div>
+  </div>
+</section>
+
+<!-- CASE STUDIES STACK -->
+<section class="block" id="case-studies">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Case Studies</div>
+      <h2>Programs that moved the needle</h2>
+      <p>Click a brand to see the breakdown.</p>
+    </div>
+    <div class="cs-stack reveal" id="csStack">
+      <a class="cs-panel active" href="case-studies/skuad-lead-recovery.html">
+        <div class="cs-collapsed"><img src="Logos/skuad.png" alt="Skuad" /><span>Skuad</span></div>
+        <div class="cs-expanded">
+          <span class="cs-tag">Skuad</span>
+          <h3>How I helped Skuad turn declining leads into a 2x monthly recovery.</h3>
+          <p class="cs-meta">SEO + AEO lead recovery</p>
+          <div class="cs-stats">
+            <div><strong>2x</strong><span>Monthly lead recovery</span></div>
+            <div><strong>251</strong><span>Leads in 6 months</span></div>
+            <div><strong>9.09M</strong><span>Impressions</span></div>
+          </div>
+          <span class="cs-cta">Read full case study →</span>
+        </div>
+      </a>
+      <a class="cs-panel" href="case-studies/asymbl-seo-ai-growth.html">
+        <div class="cs-collapsed"><img src="Logos/asymbl.png" alt="Asymbl" /><span>Asymbl</span></div>
+        <div class="cs-expanded">
+          <span class="cs-tag">Asymbl</span>
+          <h3>How I helped Asymbl turn a rebrand into stronger search and AI visibility.</h3>
+          <p class="cs-meta">SEO + AI visibility growth</p>
+          <div class="cs-stats">
+            <div><strong>387%</strong><span>Search visibility growth</span></div>
+            <div><strong>10</strong><span>MQLs generated</span></div>
+            <div><strong>85%</strong><span>Traffic from blogs</span></div>
+          </div>
+          <span class="cs-cta">Read full case study →</span>
+        </div>
+      </a>
+      <a class="cs-panel" href="case-studies/cygnet-content-strategy.html">
+        <div class="cs-collapsed"><img src="Logos/cygnet.png" alt="Cygnet" /><span>Cygnet</span></div>
+        <div class="cs-expanded">
+          <span class="cs-tag">Cygnet</span>
+          <h3>How I helped Cygnet grow to 78 top-10 keywords and 300% more AI-referred conversions in 2 months.</h3>
+          <p class="cs-meta">SEO + AI search growth</p>
+          <div class="cs-stats">
+            <div><strong>+59%</strong><span>Organic growth</span></div>
+            <div><strong>+300%</strong><span>AI-referred conversions</span></div>
+            <div><strong>+20.5%</strong><span>Search impressions</span></div>
+          </div>
+          <span class="cs-cta">Read full case study →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -257,6 +310,45 @@
   </div>
 </section>
 
+<!-- ALWAYS BUILDING -->
+<section class="block alt" id="always-building">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">AI Projects</div>
+      <h2>Always Building.</h2>
+      <p>Products and AI automations I've shipped to make content rank, convert, and get cited — plus what's next.</p>
+    </div>
+    <div class="ab-list reveal">
+      <a class="ab-row" href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">
+        <span class="ab-num">01</span>
+        <div class="ab-main"><h3>CiteReady.ai</h3><span class="ab-sub">Live product · AEO content scoring</span></div>
+        <span class="ab-arrow">→</span>
+      </a>
+      <a class="ab-row" href="https://cro.revvgrowthai.com/" target="_blank" rel="noopener">
+        <span class="ab-num">02</span>
+        <div class="ab-main"><h3>CROAnalyzer</h3><span class="ab-sub">Open source · Conversion analysis on autopilot</span></div>
+        <span class="ab-arrow">→</span>
+      </a>
+      <a class="ab-row" href="ai-projects.html">
+        <span class="ab-num">03</span>
+        <div class="ab-main"><h3>Content automations with Claude</h3><span class="ab-sub">AI automations · Pipelines, not prompts</span></div>
+        <span class="ab-arrow">→</span>
+      </a>
+      <div class="ab-row">
+        <span class="ab-num">04</span>
+        <div class="ab-main"><h3>AI &amp; Marketing News Digest</h3><span class="ab-sub">Coming soon · A daily feed of AI and content-marketing news, aggregated</span></div>
+        <span class="ab-badge">Soon</span>
+      </div>
+      <div class="ab-row">
+        <span class="ab-num">05</span>
+        <div class="ab-main"><h3>Next AI project</h3><span class="ab-sub">Coming soon · Details TBA</span></div>
+        <span class="ab-badge">Soon</span>
+      </div>
+    </div>
+    <a class="link ab-see-all" href="ai-projects.html">See all AI projects →</a>
+  </div>
+</section>
+
 <!-- WRITING TEASER -->
 <section class="block" id="writing">
   <div class="wrap">
@@ -283,11 +375,37 @@
   </div>
 </section>
 
-<footer>
-  <div class="wrap foot">
-    <div>© 2026 Navya Donkena · Content Marketing Specialist</div>
-    <div><a href="work.html">Writing</a> · <a href="ai-projects.html">AI Projects</a> · <a href="mailto:navyadonkena02@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a> · <a href="https://cro.revvgrowthai.com/" target="_blank" rel="noopener">CROAnalyzer</a></div>
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="foot-logo"><span class="foot-mark">N</span><span class="foot-name">Navya Donkena</span></div>
+      <p class="foot-tag">Content marketer &amp; AI engineer for B2B SaaS. Content built to rank, convert, and get cited in AI answers.</p>
+      <span class="foot-avail"><span class="dot-live"></span>Available for new projects</span>
+    </div>
+    <div class="foot-col">
+      <h5>Navigation</h5>
+      <a href="#top">Home</a>
+      <a href="case-studies/index.html">Case studies</a>
+      <a href="#services">What I do</a>
+      <a href="ai-projects.html">AI Projects</a>
+      <span class="nav-soon">Blog<span class="soon-badge">Soon</span></span>
+    </div>
+    <div class="foot-col">
+      <h5>Connect</h5>
+      <a href="https://www.linkedin.com/in/navya-donkena/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://citeready.revvgrowthai.com/" target="_blank" rel="noopener">CiteReady</a>
+      <a href="https://cro.revvgrowthai.com/" target="_blank" rel="noopener">CROAnalyzer</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <a href="mailto:navyadonkena02@gmail.com">navyadonkena02@gmail.com</a>
+    </div>
   </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Navya Donkena · Content Marketing Specialist</span>
+    <a class="back-top" href="#">Back to top <span class="bt-arrow">↑</span></a>
+  </div>
+  <div class="foot-watermark" aria-hidden="true">Navya Donkena</div>
 </footer>
 
 <script src="main.js"></script>
@@ -362,21 +480,34 @@
     ]}
   ];
   years.forEach((y,i)=>{
-    const tile=document.createElement('button');
-    tile.type='button';
-    tile.className='year-tile';
-    tile.innerHTML='<span class="yt-num">\''+y.year.slice(2)+'</span><span class="yt-year">'+y.year+'</span>';
-    tile.addEventListener('click',()=>selectYear(i));
-    grid.appendChild(tile);
+    const tab=document.createElement('button');
+    tab.type='button';
+    tab.className='year-tab';
+    tab.textContent=y.year;
+    tab.addEventListener('click',()=>selectYear(i));
+    grid.appendChild(tab);
   });
   function selectYear(i){
     Array.prototype.forEach.call(grid.children,(t,ti)=>t.classList.toggle('active',ti===i));
     const y=years[i];
-    detail.innerHTML='<div class="yd-year">'+y.year+'</div>'+y.items.map(it=>
-      '<div class="yd-item"><div class="yd-ic">'+(it.logo?('<img src="'+it.logo+'" alt="'+(it.alt||'')+'" />'):it.emoji)+'</div><p>'+it.title+'</p></div>'
-    ).join('');
+    detail.innerHTML='<div class="yd-year">'+y.year+'</div><div class="yd-row">'+y.items.map(it=>
+      '<div class="yd-card"><div class="yd-ic">'+(it.logo?('<img src="'+it.logo+'" alt="'+(it.alt||'')+'" />'):it.emoji)+'</div><p>'+it.title+'</p></div>'
+    ).join('')+'</div>';
   }
   selectYear(years.length-1);
+})();
+(function(){
+  const stack=document.getElementById('csStack'); if(!stack) return;
+  const panels=stack.querySelectorAll('.cs-panel');
+  panels.forEach(p=>{
+    p.addEventListener('click',e=>{
+      if(!p.classList.contains('active')){
+        e.preventDefault();
+        panels.forEach(x=>x.classList.remove('active'));
+        p.classList.add('active');
+      }
+    });
+  });
 })();
 </script>
 </body>
