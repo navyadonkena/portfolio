@@ -4,6 +4,12 @@
   --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;
   --space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;
   --gutter:24px;
+  /* TYPE SCALE: three global text styles */
+  --fs-h2:34px;      /* H2: bold, #000 */
+  --fs-h3:28px;      /* H3: bold, #000 */
+  --fs-body:17px;    /* normal text: regular, #5c5650 */
+  --color-heading:#000000;
+  --color-body:#5c5650;
   --section-pad:var(--space-7); /* top and bottom padding of every section, tinted or not */
 }
-@media(max-width:680px){:root{--space-5:20px;--space-6:24px;--space-7:32px;--space-8:48px;--gutter:16px}}
+@media(max-width:680px){:root{--space-5:20px;--space-6:24px;--space-7:32px;--space-8:48px;--gutter:16px;--fs-h2:28px;--fs-h3:24px;--fs-body:16px}}
