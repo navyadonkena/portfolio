@@ -597,3 +597,9 @@ section.block{padding:84px 0}
 .flow{width:100%;max-width:420px;height:auto}
 .fl-t{font-family:'Sora';font-weight:800;font-size:11.5px;fill:#4b0517;letter-spacing:.04em}
 .fl-s{font-family:'Inter';font-size:10.5px;fill:#5c5650}
+
+/* Services dropdown trigger is a button now (no overview page) */
+button.nav-dd-trigger{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-weight:500;font-size:15px;font-family:inherit;transition:color .15s}
+button.nav-dd-trigger:hover,button.nav-dd-trigger.active,.nav-dd:focus-within button.nav-dd-trigger{color:var(--ink)}
+button.nav-dd-trigger:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+@media(max-width:680px){button.nav-dd-trigger{padding:14px 16px;width:100%}}
