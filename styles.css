@@ -514,7 +514,7 @@ section.block{padding:var(--section-pad) 0}
 @media(max-width:760px){.year-panel{grid-template-columns:1fr}.el-detail{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}}
 
 /* FOOTER watermark: light tint of the brand colour so it reads on the maroon */
-.foot-watermark{color:rgba(255,255,255,.16);font-size:clamp(44px,10.4vw,140px)}
+.foot-watermark{color:rgba(255,255,255,.112);font-size:clamp(44px,10.4vw,140px)}
 
 /* TYPE SCALE: one set of heading and lead sizes for every page */
 .page-hero h1{max-width:none}
