@@ -570,8 +570,12 @@ section.block{padding:var(--section-pad) 0}
 
 /* AEO/GEO hero flow diagram */
 .flow{width:100%;max-width:420px;height:auto}
-.fl-t{font-family:'Sora';font-weight:800;font-size:11.5px;fill:#4b0517;letter-spacing:.04em}
-.fl-s{font-family:'Inter';font-size:10.5px;fill:#5c5650}
+.fl-t{font-family:'Sora';font-weight:800;font-size:13px;fill:#4b0517;letter-spacing:.04em}
+.fl-s{font-family:'Inter';font-size:12px;fill:#5c5650}
+.flow .fl-t[fill="#fff"],.flow .fl-s[fill="#fff"]{fill:#fff}
+.flow .fl-t[fill="#000"],.flow .fl-s[fill="#000"]{fill:#000}
+.flow .fl-t[fill="#4b0517"]{fill:#4b0517}
+.ai-flow{max-width:480px}
 
 /* Services dropdown trigger is a button now (no overview page) */
 button.nav-dd-trigger{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-weight:500;font-size:15px;font-family:inherit;transition:color .15s}
