@@ -1,4 +1,4 @@
-@import url("tokens.css");
+@import url("tokens.css?v=2");
 :root{
   --bg:#ffffff;
   --bg-alt:#e4c1c5;
@@ -52,7 +52,7 @@ header.nav{position:sticky;top:0;z-index:50;padding:16px 20px 0;background:trans
 .nav-toggle span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
 
 /* HERO */
-.hero{position:relative;padding:var(--space-6) 0;overflow:hidden}
+.hero{position:relative;padding:var(--section-pad) 0;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-260px;right:-180px;width:620px;height:620px;border-radius:50%;
   background:radial-gradient(closest-side,rgba(232,97,16,.16),transparent 70%);z-index:0}
 .hero::after{content:"";position:absolute;bottom:-280px;left:-160px;width:560px;height:560px;border-radius:50%;
@@ -92,8 +92,7 @@ h1.hero-title{font-size:clamp(19px,3vw,34px);font-weight:800}
 .logo-cell img{max-height:34px;max-width:100%;width:auto;object-fit:contain}
 
 /* SECTIONS */
-section.block{padding:var(--space-6) 0}
-section.block.alt{padding:var(--space-7) 0}
+section.block{padding:var(--section-pad) 0}
 .sec-head{max-width:640px;margin-bottom:var(--space-7)}
 .kicker{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin-top:var(--space-3)}
@@ -293,12 +292,12 @@ section.block.alt{padding:var(--space-7) 0}
 }
 
 /* ===== PROOF OF WORK PAGE ===== */
-.page-hero{padding:var(--space-6) 0;position:relative;overflow:hidden}
+.page-hero{padding:var(--section-pad) 0;position:relative;overflow:hidden}
 .page-hero::before{content:"";position:absolute;top:-220px;right:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(232,97,16,.15),transparent 70%);z-index:0}
 .page-hero .wrap{position:relative;z-index:1}
 .page-hero h1{font-size:clamp(32px,5vw,52px);font-weight:800;margin-top:12px;max-width:18ch}
 .page-hero p{margin-top:16px;color:var(--muted);font-size:18px;max-width:60ch}
-.hero-stats{border-top:1px solid var(--line);background:#fff;padding:var(--space-6) 0;margin-top:var(--space-4)}
+.hero-stats{border-top:1px solid var(--line);background:#fff;padding:var(--section-pad) 0;margin-top:var(--space-4)}
 .hero-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .hs-num{font-family:'Sora';font-weight:800;font-size:clamp(26px,3vw,34px);color:var(--ink);line-height:1}
 .hs-lbl{margin-top:8px;font-size:13.5px;color:var(--muted);line-height:1.4}
