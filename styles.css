@@ -579,3 +579,16 @@ section.block{padding:84px 0}
 .cs-inner p{margin-top:10px;color:var(--muted);font-size:14.5px;flex:1}
 .cs-more{margin-top:18px;font-size:14.5px;font-weight:700;color:var(--accent)}
 @media(max-width:860px){.cs-cards{grid-template-columns:1fr}}
+
+/* service item headings match home-page card headings */
+.svc-main h3{font-size:clamp(20px,2.4vw,26px)}
+
+/* embedded product in service-page hero */
+.embed-frame{width:100%;max-width:520px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.embed-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:var(--tint);border-bottom:1px solid var(--line)}
+.embed-bar span{width:8px;height:8px;border-radius:50%;background:#fff;border:1px solid var(--line)}
+.embed-bar b{margin-left:8px;flex:1;font-size:12.5px;font-weight:600;color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.embed-bar a{font-size:12.5px;font-weight:700;color:var(--accent)}
+.embed-frame iframe{display:block;width:100%;height:420px;border:0;background:#fff}
+.embed-cap{margin-top:12px;font-size:13.5px;color:var(--muted);text-align:center;max-width:520px}
+.ph-visual{flex-direction:column;align-items:center}
