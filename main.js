@@ -31,7 +31,7 @@ document.querySelectorAll('.back-top').forEach(a=>a.addEventListener('click',e=>
   if(rel==='index.html')return;
   const BC_FOLDERS={
     'case-studies':{label:'Case studies',href:'case-studies/index.html'},
-    'services':{label:'Services',href:'services.html'}
+    'services':{label:'Services',href:null}
   };
   const pretty=n=>n.replace(/\.html?$/,'').replace(/[-_]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
   const parts=rel.split('/');
@@ -42,7 +42,7 @@ document.querySelectorAll('.back-top').forEach(a=>a.addEventListener('click',e=>
     path+=seg+'/';
     const o=BC_FOLDERS[seg]||{label:pretty(seg),href:path+'index.html'};
     const isLast=i===parts.length-1&&file==='index.html';
-    crumbs.push({label:o.label,href:isLast?null:new URL(o.href,root).href});
+    crumbs.push({label:o.label,href:(isLast||!o.href)?null:new URL(o.href,root).href});
   });
   if(file!=='index.html'){
     const m=document.querySelector('meta[name="breadcrumb"]');
@@ -56,10 +56,10 @@ document.querySelectorAll('.back-top').forEach(a=>a.addEventListener('click',e=>
   nav.className='breadcrumbs';nav.setAttribute('aria-label','Breadcrumb');
   const wrap=document.createElement('div');wrap.className='bc-wrap';
   const ol=document.createElement('ol');ol.className='bc-list';
-  crumbs.forEach(c=>{
+  crumbs.forEach((c,ci)=>{
     const li=document.createElement('li');
     if(c.href){const a=document.createElement('a');a.href=c.href;a.textContent=c.label;li.appendChild(a);}
-    else{const sp=document.createElement('span');sp.textContent=c.label;sp.setAttribute('aria-current','page');li.appendChild(sp);}
+    else{const sp=document.createElement('span');sp.textContent=c.label;if(ci===crumbs.length-1)sp.setAttribute('aria-current','page');li.appendChild(sp);}
     ol.appendChild(li);
   });
   wrap.appendChild(ol);nav.appendChild(wrap);
