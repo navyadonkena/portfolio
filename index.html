@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=12" />
+<link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     <a class="logo" href="#top"><span class="dot"></span>Navya Donkena</a>
     <nav class="nav-links" id="navLinks">
       <a href="case-studies/index.html">Case studies</a>
-      <div class="nav-dd"><a class="nav-dd-trigger" href="services.html">Services<span class="caret" aria-hidden="true"></span></a><div class="nav-dd-menu"><a href="services/seo.html">SEO</a><a href="services/content.html">Content</a><a href="services/aeo-geo.html">AEO/GEO</a><a href="services/ai-automations.html">AI Automations</a></div></div>
+      <div class="nav-dd"><a class="nav-dd-trigger" href="services.html">Services<span class="caret" aria-hidden="true"></span></a><div class="nav-dd-menu"><a href="services/seo.html">SEO</a><a href="services/content.html">Content Marketing</a><a href="services/aeo-geo.html">AEO/GEO</a><a href="services/ai-automations.html">AI Automations</a></div></div>
       <a href="ai-projects.html">AI Projects</a>
       <span class="nav-soon">Blog<span class="soon-badge">Soon</span></span>
       <span class="nav-soon">Resources<span class="soon-badge">Soon</span></span>
@@ -200,47 +200,32 @@
       <div class="kicker">Case Studies</div>
       <h2>Content strategies that drove pipeline</h2>
     </div>
-    <div class="cs-stack reveal" id="csStack">
-      <a class="cs-panel active" href="case-studies/asymbl-seo-ai-growth.html">
-        <div class="cs-collapsed"><img src="Logos/asymbl.png" alt="Asymbl" /><span>Asymbl</span></div>
-        <div class="cs-expanded">
-          <span class="cs-tag">Asymbl</span>
+    <div class="cs-cards">
+      <a class="cs-card reveal" href="case-studies/asymbl-seo-ai-growth.html" style="--cs-bg:#f6e3e5">
+        <div class="cs-circle"><img src="Logos/asymbl.png" alt="Asymbl logo" /></div>
+        <div class="cs-inner">
+          <span class="cs-label">Case Study</span>
           <h3>387% search visibility growth within 6 months</h3>
-          <p class="cs-meta">SEO + AI visibility growth</p>
-          <div class="cs-stats">
-            <div><strong>387%</strong><span>Search visibility growth</span></div>
-            <div><strong>10</strong><span>MQLs generated</span></div>
-            <div><strong>85%</strong><span>Traffic from blogs</span></div>
-          </div>
-          <span class="cs-cta">Read full case study →</span>
+          <p>Keyword research, SEO strategy, and thought-leadership blogs that grew search visibility and AI discoverability.</p>
+          <span class="cs-more">Read more →</span>
         </div>
       </a>
-      <a class="cs-panel" href="case-studies/skuad-lead-recovery.html">
-        <div class="cs-collapsed"><img src="Logos/skuad.png" alt="Skuad" /><span>Skuad</span></div>
-        <div class="cs-expanded">
-          <span class="cs-tag">Skuad</span>
+      <a class="cs-card reveal" href="case-studies/skuad-lead-recovery.html" style="--cs-bg:#e8dde0">
+        <div class="cs-circle"><img src="Logos/skuad.png" alt="Skuad logo" /></div>
+        <div class="cs-inner">
+          <span class="cs-label">Case Study</span>
           <h3>Declining leads recovered at 2X a month</h3>
-          <p class="cs-meta">SEO + AEO lead recovery</p>
-          <div class="cs-stats">
-            <div><strong>2x</strong><span>Monthly lead recovery</span></div>
-            <div><strong>251</strong><span>Leads in 6 months</span></div>
-            <div><strong>9.09M</strong><span>Impressions</span></div>
-          </div>
-          <span class="cs-cta">Read full case study →</span>
+          <p>SEO, AEO, and content optimization that turned a decline in leads into steady monthly recovery.</p>
+          <span class="cs-more">Read more →</span>
         </div>
       </a>
-      <a class="cs-panel" href="case-studies/cygnet-content-strategy.html">
-        <div class="cs-collapsed"><img src="Logos/cygnet.png" alt="Cygnet" /><span>Cygnet</span></div>
-        <div class="cs-expanded">
-          <span class="cs-tag">Cygnet</span>
+      <a class="cs-card reveal" href="case-studies/cygnet-content-strategy.html" style="--cs-bg:#efd3d6">
+        <div class="cs-circle"><img src="Logos/cygnet.png" alt="Cygnet logo" /></div>
+        <div class="cs-inner">
+          <span class="cs-label">Case Study</span>
           <h3>59% organic traffic growth &amp; 4X AI-referred conversions</h3>
-          <p class="cs-meta">SEO + AI search growth</p>
-          <div class="cs-stats">
-            <div><strong>+59%</strong><span>Organic growth</span></div>
-            <div><strong>+300%</strong><span>AI-referred conversions</span></div>
-            <div><strong>+20.5%</strong><span>Search impressions</span></div>
-          </div>
-          <span class="cs-cta">Read full case study →</span>
+          <p>A 2-month SEO and content sprint that grew organic users and AI-referred conversions.</p>
+          <span class="cs-more">Read more →</span>
         </div>
       </a>
     </div>
@@ -385,7 +370,7 @@
     <div class="foot-col">
       <h5>Services</h5>
       <a href="services/seo.html">SEO</a>
-      <a href="services/content.html">Content</a>
+      <a href="services/content.html">Content Marketing</a>
       <a href="services/aeo-geo.html">AEO/GEO</a>
       <a href="services/ai-automations.html">AI Automations</a>
     </div>
@@ -536,19 +521,6 @@
     detail.querySelector('.el-detail').innerHTML='<div class="yd-year">'+y.year+'</div><div class="el-d-ic">'+(it.logo?('<img src="'+it.logo+'" alt="" />'):it.emoji)+'</div><p>'+it.title+'</p>';
   }
   selectYear(curYear);
-})();
-(function(){
-  const stack=document.getElementById('csStack'); if(!stack) return;
-  const panels=stack.querySelectorAll('.cs-panel');
-  panels.forEach(p=>{
-    p.addEventListener('click',e=>{
-      if(!p.classList.contains('active')){
-        e.preventDefault();
-        panels.forEach(x=>x.classList.remove('active'));
-        p.classList.add('active');
-      }
-    });
-  });
 })();
 </script>
 </body>
